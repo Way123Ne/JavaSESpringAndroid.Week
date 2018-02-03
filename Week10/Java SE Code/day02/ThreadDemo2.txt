@@ -1,0 +1,30 @@
+﻿/*
+JVM启动时就启动了多个线程，至少有两个线程可以分析的出来
+
+1>执行main函数的线程
+2〉负责垃圾回收的线程(不定时回收）
+
+*/
+
+class Demo
+{
+	public void finalize()
+	{
+	System.out.println("demo ok");
+	}
+}
+
+class ThreadDemo2
+{
+	public static void main(String[] args)
+	{
+		
+		new Demo();
+		new Demo();
+		new Demo();
+		System.gc();
+
+		System.out.println("Hello World!");
+	}
+}
+

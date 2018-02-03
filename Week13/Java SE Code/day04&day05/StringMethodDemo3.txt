@@ -1,0 +1,52 @@
+﻿public class StringMethodDemo3 {
+	/**
+	 * @garam args
+	 */
+	public static void main(String[] args)
+	{
+		/*按照面向对象的思想对字符串进行功能分类
+  		 *
+		 *3.判断
+		 *	3.1 两个字符串内容是否相同？
+		 *		boolean equals(Object obj);
+		 *		boolean equalsIgnoreCase(String str);忽略大小写比较字符串内容
+		 *	3.2 字符串中是否包含指定字符串？
+		 *		boolean contains(string str);
+		 *	3.3 字符串是否以指定字符串开头，是否以指定字符串结尾k
+		 *		boolean startsWith(string);
+		 *		boolean endsWith(string);
+		 *
+		 *4.比较
+		 *	4.1 字符串比较大小
+		 *		int compareTo(String anotherString); //== 0;String<anotherString 小于0的值;String>anotherString 大于0的值
+		 *
+		 */
+		
+		stringMethodDemo_4();
+	
+	}
+
+	private static void stringMethodDemo_4() {
+		// TODO Auto-generated method stub
+		System.out.println("a".compareTo("A"));
+		System.out.println("abc".compareTo("aqz"));
+		
+	}
+
+	private static void stringMethodDemo_3() {
+		// TODO Auto-generated method stub
+		String s = "abc";
+		System.out.println(s.equals("ABC".toLowerCase()));
+		System.out.println(s.equalsIgnoreCase("ABC"));
+
+		System.out.println(s.contains("cc"));
+
+		String str = "ArrayDemo.java";
+
+		System.out.println(str.startsWith("Array"));
+		System.out.println(".java");
+		System.out.println("Demo");
+	}
+}
+
+

@@ -1,0 +1,17 @@
+﻿		day05
+			2017/3/15
+Wed:视频学习
+part1:android app
+*异步操作(一)
+1〉什么是线程的阻塞？
+2〉什么是异步操作？
+3〉AsyncTask的基本使用方法
+
+part2:Java SE
+*IO流
+1>字符流-缓冲区-装饰设计模式
+2>字符流-缓冲区-装饰设计模式和继承的区别
+3>字符流-缓冲区-LineNumberReader
+
+part3:Java Spring
+*第6讲.Bean的生命周期(一)			

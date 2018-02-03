@@ -1,0 +1,33 @@
+﻿class Fordemo
+{
+	public static void main(String[] args)
+	{
+	
+	/*
+	if语句格式
+	if(初始化表达式;循环条件表达式;操作后的表达式;)
+	{
+	执行语句  //循环体
+	}
+	
+	
+	for(int x=2;x<5;x++)
+	{
+	System.out.println("x="+x);
+	}
+	*/
+
+	int x=2;
+	for(System.out.println("a");x<5;System.out.println("c"))
+		{
+		System.out.println("d");
+		x++;
+		}
+
+		/*
+		for语句特殊格式
+		for(int a=2,b=2;a<4;a++,b--)
+		*/
+
+     }
+}

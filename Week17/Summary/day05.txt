@@ -1,0 +1,21 @@
+﻿			day05
+				2017/2/8
+Wed:视频学习
+part1:android app
+*Json数据解析
+1〉什么是Json(JavaScript Object Notation)
+a)JSON数据是一系列键值对的集合
+b)JSON相对于XML来讲解析稍微方便一些
+2〉JSON数据格式的特点--〉JSON VS XML
+a)JSON和XML的数据可读性基本相同
+b)JSON和XML都拥有丰富的数据解析手段
+c)JSON相对于XML来讲，数据体积小
+d)JSON与JavaScript的交互更加方便
+e)JSON对数据的表述性相对较差
+3〉使用Gson解析JSON数据
+
+
+part2:Java SE
+*常用对象API
+1>集合框架练习
+2〉LinkedHashSet集合

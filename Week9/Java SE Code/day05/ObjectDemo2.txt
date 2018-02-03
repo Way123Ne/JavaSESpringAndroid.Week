@@ -1,0 +1,123 @@
+﻿/*
+Object:所有类的根类。
+
+Object是不断抽取而来，具备着所有对象都具备的共性内容。
+
+常用的共性功能：
+*/
+
+/*
+class Fu // extends Object
+{
+	Fu()
+	{
+		super();
+	}
+}
+class Zi extends Fu
+{
+	Zi()
+	{
+		super();
+	}
+}
+*/
+
+class Person //extends Object
+{
+	private int age;
+	Person(int age)
+	{
+		this.age = age;
+	}
+
+	/*
+	一般都会覆盖此方法，根据对象的特有内容，建立判断对象是否相同的依据。
+	*/
+ 
+	/*
+	equals方法覆盖：重点
+	1）多态
+	2）instanceof
+	3)this
+	*/
+
+	public boolean equals(Object obj) //Object obj = p2; p2向上转型
+	{
+		if(!(obj instanceof Person))
+		{
+			throw new ClassCastException("类型错误");
+		}
+		Person p = (Person)obj; //Person向下转型
+		return this.age == p.age;
+	}
+
+	/*
+	覆盖掉原来已有的hashCode()
+	1>Integer.toHexString() //将()中数转化为十六进制
+	*/
+
+	/*
+	public int hashCode()
+	{
+		return age;
+	}
+	*/
+
+	public String toString()  //System.out.println(p1.toString()); toString()可以省略
+  {
+	return "Person :"+age;
+  }
+}
+
+/*
+//getClass()  得到字节码文件 
+
+						class Class
+						{
+							 name
+							 field;(属性）
+							constructor
+							method
+						}
+	Demo.class                     Test.class
+					
+	int num;							int x;
+	Demo(){}						Test(){}
+				
+	void show()					method(){}
+
+*/
+class  ObjectDemo
+{
+	public static void main(String[] args) 
+	{
+		Person p1 = new Person(20);
+		Person p2 = new Person(60);
+
+	    //System.out.println(p1==p2);
+	 //   System.out.println(p1.equals(p2));
+
+	//	System.out.println(p1);
+	//	System.out.println(Integer.toHexString(p1.hashCode()));
+
+	//	Class clazz1 = p1.getClass(); //class Class(){}字节码文件
+	//	Class clazz2 = p2.getClass();//class Class(){}字节码文件
+	//	System.out.println(clazz1==clazz2);
+	//	System.out.println(clazz1.getName());
+
+		System.out.println(p1.toString());  //Person@5dcba031 
+										  //Person@14<---hashCode()覆盖
+		System.out.println(p1.getClass().getName()+"@"+Integer.toHexString(p1.hashCode()));  //Person@5dcba031
+																																	// Person@14<---hashCode()覆盖
+	}
+}
+
+/*
+ 像类似于数据模型的类，一般会产生N多个类
+ 其中这样的类里一般都回覆盖equal()、hashCode()、toSting()
+ 所有类都具有该功能，但都回建立特有的内容
+
+例如：Person这样的类会产生学生、工人....
+      而学生、工人等类都回具有类Person的共有功能，同时又具备各自的特有内容
+*/

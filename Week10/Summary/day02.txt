@@ -1,0 +1,12 @@
+﻿			day02
+				2016/12/18
+Sun:视频学习
+
+part1:andorid app
+*MP3项目详细设计
+
+part2:Java SE
+*多线程
+1〉JVM中的多线程解析
+2〉主线程运行示例
+3〉多线程创建的方式-继承Thread

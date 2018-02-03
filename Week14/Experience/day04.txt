@@ -1,0 +1,20 @@
+﻿			day04
+				2017/1/17
+Tue:视频学习
+心得：
+part1:android app
+*和App Widget相关的基本概念
+1.AppWidgetProviderInfo对象：
+	为App Widget提供元数据，包括布局，更新频率等等数据。
+	这个对象被定义在XML文件中	
+2.AppWidgetProvider:
+	定义了App Widget的基本生命周期函数
+
+*如何创建res/xml和res/raw文件夹并在其中添加文件呢？
+解决办法是：
+	新建文件的时候选择file，而不是xml文件
+因为如果加xml文件
+	或其它类型文件总是有默认的存放该文件的目录
+直接在xml文件夹上右键，
+ 	选择新建文件，然后文件名写上后缀名，如example.xml这样就好啦！
+参考文档：http://bbs.csdn.net/topics/390817370

@@ -1,0 +1,44 @@
+﻿/*
+多线程下的单例
+*/
+
+//饿汉式：开发
+class Single
+{
+	private static final Single s = new Single();
+	private Single() {}
+	public static Single getInstance()
+	{
+		return s;
+	}
+}
+
+//懒汉式:面试
+class Single
+{
+	private static Single s = null;
+	
+	private Single(){}
+	
+	public static Single getInstance()
+	{
+		if(s==null) //提高效率
+		{
+			synchronized(Single.class) //静态用；非静态用this或getClass()
+			{
+				if(s==null)
+				//  -->0  -->1
+					s = new Single();
+			}
+		}
+		return s;
+	}	
+}
+
+class SingleDemo
+{
+	public static void main(String[] args)
+	{
+		System.out.println("Hello World!");
+	}
+}

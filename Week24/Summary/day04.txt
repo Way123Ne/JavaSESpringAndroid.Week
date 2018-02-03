@@ -1,0 +1,10 @@
+﻿		day04
+			2017/3/28
+Tue:视频学习
+part1:Java SE
+*IO流
+1>Properties集合的-修改配置信息
+2>Properties集合的-练习
+
+part2:Java Spring
+*第12讲.装配Bean(四)

@@ -1,0 +1,28 @@
+﻿class ForForTest3
+{
+	public static void main(String[] args)
+	{
+	/*
+	需求:利用for语句的嵌套结构完成下列图形
+	* * * * *
+	-* * * *
+	--* * *
+	---* *
+	----*
+	*/
+	
+	for(int x=1;x<=5;x++)
+	{
+	for(int y=1;y<x;y++)
+	{
+	System.out.print(" ");	
+	}
+	
+	for(int z=x;z<=5;z++)
+		{
+		System.out.print("* ");
+		}
+		System.out.println();
+		}
+   }
+}

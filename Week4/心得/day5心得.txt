@@ -1,0 +1,33 @@
+﻿			day5
+				2016/11/9
+Wed:视频学习
+
+part1:Android app
+心得：
+*可以设置最低适配的sdk版本,低版本可以装在高版本上,
+ 高版本不能装在低版本上,设定最低版本就可以了
+*需要在minSdkVersion这个版本上将程序完整的跑一遍来确定兼容性是没有问题的。
+*minSdkVersion与maxSdkVersion，就是在安装程序的时候，
+如果目标设备的API版本小于minSdkVersion，或者大于maxSdkVersion，程序将无法安装
+*规范：设置数值
+①symbol.setText(R.string.symbol); //建议使用
+②symbol.setText("乘以");
+
+重点：
+*compile sdk
+①compile sdk是在编译的时候起作用，用于指定使用哪个API版本(SDK版本)进行编译
+*minSdkVersion&maxSdkVersion
+②minSdkVersion和maxSdkVersion是在程序安装的时候起作用，
+  用于指定哪些版本的设备可以安装此应用。
+*targetSdkVersion
+③targetSdkVersion是在程序运行的时候起作用，用于提高指定版本的设备上程序运行体验。
+
+part2:Java SE
+心得：
+*类名与文件名尽量保持一致
+*一些在实际开发中几乎不常用到的知识点了解下就好，不需深入学习
+
+重点：
+*数组排序（选择/冒泡）
+①开发
+②面试（背下来直接使用）

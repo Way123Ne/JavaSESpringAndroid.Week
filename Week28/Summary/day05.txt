@@ -1,0 +1,9 @@
+﻿		day05
+			2017/4/26
+Wed:视频学习
+part:java se
+*反射机制
+1〉获取Class对象的三种方式
+2〉获取Class中的构造函数
+3〉获取Class中的字段
+4> 获取Class中的方法

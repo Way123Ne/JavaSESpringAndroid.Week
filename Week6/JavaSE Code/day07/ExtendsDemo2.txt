@@ -1,0 +1,23 @@
+/*
+什么时候定义继承？
+
+当类与类之间存在所属关系的时候，就定义继承。xxx是yyy中的一种,xxx extends yyy
+
+所属关系:is a
+*/
+class Demo
+{
+	void show1(){}
+}
+
+class DemoA extends Demo
+{
+//	void show1(){}
+	void show2(){}
+}
+
+class DemoB extends Demo
+{
+//	void show1(){}
+	void show3(){}
+}

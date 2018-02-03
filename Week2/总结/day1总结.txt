@@ -1,0 +1,17 @@
+﻿			day1
+				2016/10/22
+Sat:视频学习
+
+part1:Android app
+*多选按钮（CheckBox）的基本概念
+*在XML文件当中使用<CheckBox/>标签
+*在代码中使用CheckBox的对象表示
+*常用OnClickListener与OnCheckedChangeListener监听器
+*DDMS的概念
+
+part2:Java SE
+*变量
+①自动类型转换（隐式类型转换）
+②强制类型转换（显式类型转换）
+③System.out.println('a')与System.out.println('a'+1)的区别
+④初步了解ASCII与Unicode编码表

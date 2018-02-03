@@ -1,0 +1,544 @@
+﻿----------------------------------------------
+----------------------------------------------
+3.
+写出程序结果
+interface A{}
+class B implements A
+{
+	public String func()
+	{
+		return "func";
+	}
+}
+class Demo
+{
+	public static void main(String[] args)
+	{
+		A a = new B(); //多态时调用非静态方法--〉编译看左边，运行时看右边
+	      //a.func();
+		System.out.println(a.func());//编译失败，因为a所属的A接口没有定义func方法
+	}
+}
+-------------------------------------------------
+-------------------------------------------------
+4.
+写出程序结果
+class Fu
+{
+	boolean show(char a)
+	{
+		System.out.println(a);
+		return true;
+	}
+}
+class Demo extends Fu
+{
+	public static void main(String[] args)
+	{
+		int i = 0;
+		Fu f = new Demo();
+		Demo d = new Demo();
+		for(f.show('A'); f.show('B')&&(i<2); f.show('C'))
+		{
+			i++;
+			d.show('D');
+		}
+	}
+	boolean show(char a)
+	{
+		System.out.println(a);
+		return false;
+	}
+}
+
+A  B
+----------------------------------------------
+----------------------------------------------
+5.
+写出程序结果
+interface A{}
+class B implements A
+{
+	public String test()
+	{
+		return "yes";
+	}
+}
+class Demo
+{
+	static A get()
+	{
+		return new B();
+	}
+	public static void main(String[] args)
+	{
+		A a = get();// A a = new B();
+		System.out.println(a.test); //编译失败，A接口中没有定义test方法--〉请看第三题
+	}
+}
+------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+6.
+写出程序结果
+class Super
+{
+	int i = 0;
+	public Super(String a)
+	{
+		System.out.println("A");
+		i = 1;
+	}
+	public Super()
+	{
+		System.out.println("B");
+		i += 2;
+	}
+}
+class Demo extends Super
+{
+	public Demo(String a)
+	{
+		System.out.println("C");
+		i += 5;
+	}
+	public static void main(String[] args)
+	{
+		int i = 4;
+		Super d = new Demo("A");
+		System.out.println(d.i);
+	}
+}
+
+B  C  7
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+7.
+interface Inter
+{
+	void show(int a ,int b);
+	void func();
+}
+class Demo
+{
+	public static void main(String[] args)
+	{
+		//不足代码；调用两个函数，要求用匿名内部类
+
+		Inter in = new Inter()  //多态；匿名内部类本质--〉接口/父类指向子类--〉Inter接口，new Inter()子类对象
+		{
+			public void show(int a ,int b)
+			{}
+			public void  func()
+			{}
+		};
+		
+		in.show(3,4);
+		in.func();
+	}
+}
+
+//如果没有interface Inter接口，需要想到class Demo 默认继承了Object
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+8.
+写出程序结果
+class TD
+{
+	int y = 6;
+	class Inter
+	{
+		static int y = 3; //编译会失败，因为非静态的内部类中不能有静态成员
+		void show()
+		{
+			System.out.println(y);
+		}
+	}
+}
+class TC
+{
+	public static void main(String[] args)
+	{
+		TD.Inter ti = new TD().new Inter();
+		ti.show();
+	}
+}
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+9.
+选择题，写出错误答案错误的原因，用单行注释的方式
+class Demo
+{
+	int show(int a,int b){return 0;}
+}
+下面哪些函数可以存在于Demo的子类中
+A.public int show(int a,int b){return 0;}//可以的，覆盖
+B.private int show(int a,int b){return 0;}//不可以，权限不够
+C.private int show(int a ,long b){return 0;}//可以，子类特有方法
+D.pubic short show(int a ,int b){return 0;}//不可以，调用的不确定性
+E.static int show(int a,int b){return 0;}//不可以，静态只能覆盖静态
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+10.
+写出this关键字的含义以及final有哪些特点？
+1〉this含义：
+2>final特点：
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+11.
+写出程序结果：
+class Fu
+{
+	int num = 4;
+	void show()
+	{
+		System.out.println("showFu");
+	}
+}
+class Zi extends Fu
+{
+	int num = 5;
+	void show()
+	{
+		System.out.println("showZi");
+	}
+}
+class T
+{
+	pbulic static void main(String[] args)
+	{
+		Fu f = new Zi();
+		Zi z = new Zi();
+		System.out.println(f.num); //4
+		System.out.printn(z.num);//5
+		f.show(); //showzi
+		z.show();//showzi
+	}
+}
+
+//成员变量看左边，编译运行都左边
+//成员函数编译看左边，运行看右边
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+6.
+写出程序结果
+class Super
+{
+	int i = 0;
+	public Super(String a)
+	{
+		System.out.println("A");
+		i = 1;
+	}
+	public Super()
+	{
+		System.out.println("B");
+		i += 2;
+	}
+}
+class Demo extends Super
+{
+	public Demo(String a)
+	{
+		System.out.println("C");
+		i += 5;
+	}
+	public static void main(String[] args)
+	{
+		int i = 4;
+		Super d = new Demo("A");
+		System.out.println(d.i);
+	}
+}
+--------------------------------------------------------
+7.
+interface Inter
+{
+	void show(int a ,int b);
+	void func();
+}
+class Demo
+{
+	public static void main(String[] args)
+	{
+		//不足代码；调用两个函数，要求用匿名内部类
+
+		Inter in = new Inter()  //多态；匿名内部类本质--〉父类指向子类
+		{
+			public void show(int a ,int b)
+			{}
+			public void  func()
+			{}
+		};
+		
+		in.show(3,4);
+		in.func();
+	}
+}
+
+//如果没有interface Inter接口，需要想到class Demo 默认继承了Object
+----------------------------------------------------------------------
+8.
+写出程序结果
+class TD
+{
+	int y = 6;
+	class Inter
+	{
+		static int y = 3;
+		void show()
+		{
+			System.out.println(y);
+		}
+	}
+}
+class TC
+{
+	public static void main(String[] args)
+	{
+		TD.Inter ti = new TD().new Inter();
+		ti.show();
+	}
+}
+//编译会失败，因为非静态的内部类中不能有静态成员
+---------------------------------------------------------
+9.
+选择题，写出错误答案错误的原因，用单行注释的方式
+class Demo
+{
+	int show(int a,int b){return 0;}
+}
+下面哪些函数可以存在于Demo的子类中
+A.public int show(int a,int b){return 0;}//可以的，覆盖
+B.private int show(int a,int b){return 0;}//不可以，权限不够
+C.private int show(int a ,long b){return 0;}//可以，子类特有方法
+D.pubic short show(int a ,int b){return 0;}//不可以，调用的不确定性
+E.static int show(int a,int b){return 0;}//不可以，静态只能覆盖静态
+-----------------------------------------------------------------------------
+10.
+写出this关键字的含义以及final有哪些特点？
+1〉this含义：
+2>final特点：
+-----------------------------------------------------------------------------
+//成员变量看左边，编译运行都左边
+//成员函数编译看左边，运行看右边
+11.
+写出程序结果：
+class Fu
+{
+	int num = 4;
+	void show()
+	{
+		System.out.println("showFu");
+	}
+}
+class Zi extends Fu
+{
+	int num = 5;
+	void show()
+	{
+		System.out.println("showZi");
+	}
+}
+class T
+{
+	pbulic static void main(String[] args)
+	{
+		Fu f = new Zi();
+		Zi z = new Zi();
+		System.out.println(f.num); //4
+		System.out.printn(z.num);//5
+		f.show(); //showzi
+		z.show();//showzi
+	}
+}
+-----------------------------------------------------------
+12.
+interface A
+{
+	void show();
+}
+interface B
+{
+	void add(int a,int b);
+}
+class C implements A,B
+{
+	//程序代码
+
+	//private int x,y;
+	private int sum;
+	public void add(int x,int y)
+	{
+		//this.x = x;
+		//this.y = y;
+		sum = x+y;
+	}
+
+	public void show()
+	{
+		//System.out.pritnln(this.x+y);
+		System.out.println(sum);
+	}
+}
+class D
+{
+	public static void  main(String[] args)
+	{
+		C c = new C();
+		c.add(4,2);
+		c.show(); //通过该函数打印以上两个数的和
+	}
+}
+-------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------
+13.
+写出程序结果
+class Demo
+{
+	public static void main(String[] args)
+	{
+		try
+		{
+			showExce();
+			System.out.println("A");
+		}
+		catch(Exception e)
+		{
+			System.out.println("B");
+		}
+		finally
+		{
+			System.out.println("C");
+		}
+		System.out.println("D");
+	}
+	public static void showExce() throws Exception
+	{
+		throw new Exception();
+	}
+}
+
+B  C  D
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+14.
+写出程序结果
+class Super
+{
+	int i = 0;
+	
+	public Super(String a)
+	{
+		i = 1;
+	}
+}
+class Demo extends Super
+{
+	public Demo(String a)
+	{
+		super(); //父类中没有空参的构造函数，编译失败p
+		i = 2;
+	}
+	public static void main(String[] args)
+	{
+		Demo d = new Demo("yes");
+		System.out.println(d.i);
+	}
+}
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+15.
+写出程序结果
+class Super
+{
+	public int get(){return 4;}
+}
+class Demo15 extends Super
+{
+	public long get(){return;} //失败，调用的不确定性
+	public static void main(String[] args)
+	{
+		Super s = new Demo15();
+		System.out.println(s.get());
+	}
+}
+----------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
+16.
+写出程序结果：
+class Demo
+{
+	public static void func()
+	{
+		try
+		{
+			throw new Exception();
+			System.out.println("A");//该条件无法被执行-->废话
+		}
+		catch(Exception e)
+		{
+			System.out.println("B");	
+		}	
+	}
+	public static void main(String[] args)
+	{
+		try
+		{
+			func();
+		}
+		catch(Exception e)
+		{
+			System.out.println("C");
+		}
+		System.out.println("D");
+	}
+
+}
+
+C   D
+-----------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
+17.
+写出程序结果
+class Demo
+{
+	public void func()
+	{
+		//位置1：new Inner();
+	}
+	class Inner{}
+	public static void main(String[] args)
+	{
+		Demo d = new Demo();
+		//位置2 new Inner();//不可以，因为主函数是静态的，只能调用静态成员，所以内部类也必须是static的
+	}
+}
+A.在位置1写 new Inner();
+B.在位置2写 new Inner();
+C.在位置2写 new d.Inner();  //new new Demo().Inner();格式错误; 正确格式--〉new Demo().new Inner();
+D.在位置2写 new Demo.Inner(); //格式正确的，但Inner必须改为静态的--〉static class Inner{}
+----------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------
+18.
+写出程序结果
+class Exc0 extends Exception{}
+class Exc1 extends Exc0{}
+
+class Demo
+{
+	public static void(String[] args)
+	{
+		try
+		{
+			throw new Excl();
+		}
+		catch(Exception e) //多catch时，父类的catch放在最下面
+		{
+			System.out.println("Exception");
+		}
+		catch(Exc0 e)
+		{
+			System.out.println("Exc0");
+		}
+	}
+}

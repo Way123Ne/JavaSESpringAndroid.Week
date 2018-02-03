@@ -1,0 +1,22 @@
+﻿			day04&day05
+					2017/1/10-11
+Tue&Wed:视频学习
+part1:Season 2 of android app
+*02_01_Spinner的使用
+1〉什么是Spinner?   
+2〉创建一个Spinner的步骤
+a)在布局文件中声明Spinner
+b)在strings.xml中声明一个数组
+c)创建一个ArrayAdapter--〉两种方法 [重点]
+d)得到Spinner对象，并设置数据
+3〉为Spinner创建一个监听器
+
+*Mp3项目
+1〉代码编写2_思路梳理
+a)得到用户所要下载的MP3文件的名称
+
+part2:Java SE
+*常用对象API
+1>String类-常见功能-判断
+2〉String类-常见功能-比较
+3〉String类-intern方法

@@ -1,0 +1,26 @@
+﻿			day03
+				2017/1/30
+Mon:视频学习
+
+part1:andorid app
+*appwidget(三)
+1〉接收来自AppWidget的广播
+a)在AndroidManifest.xml中为AppWidgetProvider注册新的intent-filter
+b)使用getBroadcast()方法创建一个PendingIntent
+c)为AppWidget中的控件注册处理器
+d)在onReceive方法中接收广播消息
+2〉更新AppWidget中控件的状态
+a)在RemoteViews类中有一系列的方法可以更新控件
+b)使用RemoteViews更新控件状态后，要使用AppWidgetManager
+  通知AppWidget进行更新
+
+c)注意事项：
+	由于AppWidget和主程序不再同一个进程中，
+	不能用普通的方法进行操作
+
+
+
+part2:Java SE
+*常用对象API
+1>集合框架-方法演示_2
+2>集合框架-迭代器使用

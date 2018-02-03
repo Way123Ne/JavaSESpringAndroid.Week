@@ -1,0 +1,28 @@
+﻿		day07
+			2017/2/3
+Fri:视频学习
+
+part1:android app
+*Animation的使用(一)
+1〉什么是Animation?
+Animations提供了一系列的动画效果，这
+些效果可以应用在绝大多数的控件中
+2〉深入理解
+a)Animation.RELATIVE_TO_SELF (x/y轴；1f-->自己的全部）
+b)Animation.RELATIVE_TO_PARENT (x/y轴；1f-->手机屏幕[父控件]的全部）
+3〉Tween Animations的通用属性
+a)setDuration(long durationMills)
+设置动画持续时间(单位：毫秒)
+b)setFillAfter(boolean fillAfter)
+如果fillAfter的值为true;则动画执行后，控件将停留在执行结束的状态
+c)setFillBefore(boolean fillBefore)
+d)setStartOffSet(long startOffSet)
+设置动画执行之前的等待时间
+e)setRepeatCount(int repeatCount)
+设置动画重复执行的次数
+
+
+part2:Java SE
+*常用对象API
+1>集合框架-Vector集合
+2〉集合框架-LinkedList集合

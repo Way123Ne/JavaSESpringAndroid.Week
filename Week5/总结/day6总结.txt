@@ -1,0 +1,18 @@
+﻿			day6
+				2016/11/17
+Thu:视频学习
+
+part1:Android app
+
+*Handler的使用
+①概念 ②使用方法 ③使用handler操作Thread线程
+*消息队列的基本初识
+*DDMS
+在DDMS下Logcat通过新建的log filter进行调试监控Thread的输出
+
+
+part2:Java SE
+*构造函数
+①基本概念 ②基本特点 ③作用 ④注意事项
+*初步了解默认的构造函数
+*构造函数和一般函数的区别

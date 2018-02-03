@@ -1,0 +1,14 @@
+﻿			day07
+				2016/12/2
+Fri:视频学习
+
+part1：Android app
+*BroadcastReceiver
+①介绍 ②作用 ③编写方法 ④生命周期
+*重点：在mainfest.xml文件中注册receiver
+
+part2:Java SE
+*接口
+①特点 ②接口和抽象类的区别 ③接口的应用
+*多态
+①概述 ②好处 ③弊端

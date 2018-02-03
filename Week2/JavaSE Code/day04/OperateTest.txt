@@ -1,0 +1,47 @@
+﻿class OperateTest 
+{
+	public static void main(String[] args) 
+	{
+	//最有效率的方式算出2乘以8的结果？
+	/*
+	二进制运算：
+	2*8;
+	0010*1000=10000;
+
+	位移运算：
+	2*8;
+	2*2(3);
+	2<<3=10000;
+	*/
+	//System.out.println(2*8);
+
+	//对两个整数变量的值进行互换
+
+	int a =3,b=5;
+
+	//System.out.println("a="+a+",b="+b);
+
+	//实际开发
+	/*
+	int c;
+	c=a;
+	a=b;
+	b=c;
+	System.out.println("a="+a+",b="+b);
+	*/
+
+	//这种方式不要用，如果两个整数的数值过大，会超出int范围，会强制转换。导致数据变化丢失精度。
+	/*
+	a=a+b;//a=3+5;a=8;
+	b=a-b;//3+5-5=3;b=3;
+	a=a-b;//3+5-3=5;a=5;
+	System.out.println("a="+a+",b="+b);
+	*/
+
+	//面试题
+	a=a^b;//a=3^5;
+	b=a^b;//b=(3^5)^5;b=3;
+	a=a^b;//a=(3^5)^3;a=5;
+	System.out.println("a="+a+",b="+b);
+	}
+}

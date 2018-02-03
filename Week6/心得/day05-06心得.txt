@@ -1,0 +1,35 @@
+﻿			day05-06
+				2016/11/23-24
+Wed&Thu:视频学习+书本
+
+part1:Android app
+心得：
+*学习别人视频时尽量找到别人写的源代码,多看多模仿
+*将练习过的android小项目从eclipse中导出，提高电脑运行速度
+*尽量不要将许多的android练习小项目都安装在同一个android模拟器上，要不电脑发卡
+*尽量不要同时打开多个AVD
+*JAVA中 错误显示的是 the public type must be defined in its own file 
+ 公共类型必须定义在它自己的文件,一个文件只能一个public 类，而且类名必须和文件名一样
+
+重点：
+*利用adb访问mysqlite（Linux下调试eclipse下创建的mysqlite项目）
+
+part2:Java SE
+视频心得：
+*javadoc 文档注释
+**软件分为不同版本
+**如果想把一个类文档化，该类必须是public类(文件名和public的类名&大小写必须一致）
+*平时练习的java文件也需要好好保存
+
+书本心得：
+*次级类会继承上级类的方法，子类会自动获得父类的功能
+*运用对象-两个类
+①要被操作对象的类(例如：dog、television)
+②另一个是用来测试该类的类（测试用的类带有 main())
+*原点运算符（.)-存取对象的状态与行为
+①通过操作数存取属性。例：d.size=40;
+②通过操作和调用。例：method
+                      d.bark();
+*任何变量只要加上public,static,final,基本都会变成全局变量取用的常数
+*在jar文件中可以引入一个简单的文字格式的文字文件，被称为mainfest,里面有定义出jar
+ 中的哪一个文件带有启动应用程序的main()方法

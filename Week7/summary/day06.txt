@@ -1,0 +1,26 @@
+﻿			day06
+				2016/12/1
+Thu:视频学习
+
+part1:Android app
+*什么是SAX(simple API for xml)
+ 既是一种接口，也是指一个软件包
+ 作为接口，SAX是事件驱动型XML解析的一个标准接口
+*SAX基本原理
+ 对文档进行顺序扫描，当扫描到文档开始与结束、元素开始与结束、文档结束等地方时通知事件处理函数，
+ 由事件处理函数做相应动作，然后继续同样的扫描，直至文档结束
+*SAX模型
+*SAX常用接口
+**ContentHandler接口方法
+1〉void startDocument() 2>void endDocument() 3>void startElement(String uri,String localName,Attributes atts)
+4〉void endElement(String uri,String localName,String qName)
+5> void characters(char[]ch,int start,int length)
+*解析文档的过程：
+1〉创建事件处理程序 2〉创建SAX解析器
+3〉将事件处理程序分配给解析器 
+4〉对文档进行解析，将每个事件发送给处理程序
+
+part2:Java SE
+*接口
+1〉定义 2〉实现(implements) 3>多实现  4〉注意细节
+

@@ -1,0 +1,28 @@
+﻿			day5
+				2016/11/2
+Wed:视频学习
+
+part1:Android app
+*SeekBar主要属性
+①进度条最大值：max ②当前进度:progress 
+③次要进度的值:Secondary Progress
+*SeekBar监听器OnSeekBarChangeListener的方法
+①OnProgressChanged ②OnStartTrackingTouch
+③OnStopTrackingTouch
+*RatingBar主要属性
+①星星的个数:numStars ②当前等级:progress ③stepSize
+*RatingBar监听器OnRatingBarChangeListener的方法
+①OnRatingChanged
+
+part2:Java SE
+*了解内存加载过程
+*了解什么是栈
+*函数重载的概念
+*函数重载的特点
+*代码的复用
+*数组的概念
+*数组的好处
+*数组的格式
+
+
+

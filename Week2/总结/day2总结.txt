@@ -1,0 +1,15 @@
+﻿			day2
+				2016/10/23
+Sun:视频学习
+
+part1:Android app
+*完成一个小作业
+①通过一个 all check <CheckBox>标签
+  控制其它三个eat、sleep 、dota<CheckBox>标签
+
+part2:Java SE
+*算数运算符
+*逻辑运算符
+①&的作用和运算规律
+②|的作用和运算规律
+*比较运算符

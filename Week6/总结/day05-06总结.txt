@@ -1,0 +1,12 @@
+﻿			day05-06
+				2016/11/23-24
+Wed&Thu:视频学习
+
+part1:Android app
+*寻找mysqlite项目的正确的源代码，安装在android 模拟器上运行
+*使用adb访问mysqlite
+*Linux命令行下调试eclipse下创建的mysqlite项目 
+ 
+part2:Java SE
+*数组工具类-文档注释
+ 生成Index.html，学习如何使用ArrayTool

@@ -1,0 +1,44 @@
+﻿		day02&03
+			2017/2/26-27
+Sun&Mon:视频学习
+part1:android app
+*GoogleMap(一) -->Project and AVD need to use Google APIs,not Android API
+	       -->add Google APIs to add ons folder[重点]
+
+1>GoogleMap介绍
+a)Google提供了一组API,可以很方便的在应用程序中添加基于地图的功能
+b)Android将大部分的地图功能封装在MapView中
+c)MapView将通过GoogleMaps服务取得数据，并以地图的方式显示出来
+d)MapView提供了一组控件用于地图的控制
+
+2>获取Maps API Key(一)
+**应用程序签名：
+a)Android系统要求所有应用程序都必须使用证书进行签名
+b)在证书中包含一个唯一的key
+c)证书用于标示应用程序的作者
+d)在开发和调式的过程中可以使用debug key(win7->C:\Users\<user>\.android\)
+2>获取Maps API Key(二)
+**Debug Key的相关参数：
+Keystore name:"debug.keystore"
+Keystore password:"android"
+Key alias:"androiddebugkey"
+Key password:"android"
+CN:"CN=Android Debug,O=Android,C=US"
+2>获取Maps API Key(三)
+**申请Google Maps API Key:
+a)生成证书指纹：
+		C:Users\Wayne\.android>keytool -list -alias androiddebugkey -keystore debug.keystore
+    输入密匙密码:android
+    认证指纹(MD5/SHA1):.......
+b)打开网址，输入上面生成的指纹：
+  http://code.google.com/intl/en-US/android/maps-api-signup.html
+  同意条款，并将认证指纹输入，后生成android地图API密匙
+
+3>创建第一个MapView
+
+
+
+part2:Java SE
+*集合框架工具类
+1>常用对象API(集合框架-工具类-Collections-折半&最值)
+2>常用对象API(集合框架-工具类-Collections-逆序&替换)

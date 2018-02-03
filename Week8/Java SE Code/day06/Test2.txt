@@ -1,0 +1,46 @@
+﻿/*
+fu constructor run
+show ..0
+constructor ...9
+zi constructor ...10
+*/
+
+class Fu
+{
+	Fu()
+	{
+		System.out.println("fu constructor run");
+		show();
+	}
+	
+	void show()
+	{
+		System.out.println("hehe");
+	}
+}
+
+class Zi extends Fu
+{
+	int num=9;// 3-->显示初始化
+	{
+		System.out.println("constructor ..."+num);
+		num=10;
+	}
+	Zi()
+	{
+		super();  //1
+		System.out.println("zi constructor ..."+num);//4
+	}
+	void show()//2
+	{
+		System.out.println("show .."+num);
+	}
+}
+
+class Test2
+{
+	public static void main(String[] args)
+	{
+		new Zi();
+	}
+}

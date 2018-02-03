@@ -1,0 +1,30 @@
+﻿		day04
+			2017/3/7
+Tue:视频学习
+part1:Java Spring
+*第2讲.快速入门案例(三).ioc是什么.di是什么
+
+part2:Java SE
+*反射机制
+1〉概述&应用场景
+*其他对象API
+1>Math类
+
+part3:android app
+*Oauth工作原理
+1>什么是Oauth
+a)~是一中安全认证的协议
+b)~协议为用户自愿的授权提供了一个安全、开放又简易的标准
+c)~的授权不会使第三方触及到用户的帐号信息(ex:user\password)
+d)官方url:http://www.oauth.net
+2>Oauth中的角色
+a)Service Provider
+  服务提供者通常是网站，在这些网站中保存着一些受限制的资源
+b)User
+  用户持有可以登录服务提供者网站的用户名和密码，
+  并且在这些网站上保存了一些私人信息，ex:pic video...
+c)Consumer
+  客户时希望能够访问用户私人信息的应用程序，可以是web/PC/phone application
+d)Protected Resources
+  这些资源可能是pic video contact...
+3>Oauth验证示意图、验证过程图—〉day04 of Experience

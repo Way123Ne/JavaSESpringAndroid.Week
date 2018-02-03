@@ -1,0 +1,11 @@
+﻿		day04
+			2017/4/25
+Tue:视频学习
+part:java se
+*网络编程
+1>URL&URLConnection
+2>常见网络结构
+
+*反射机制
+1>概述&应用场景
+2>细节&Class对象

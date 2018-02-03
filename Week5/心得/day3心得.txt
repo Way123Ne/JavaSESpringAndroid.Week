@@ -1,0 +1,19 @@
+﻿			day3
+				2016/11/14
+Mon:视频学习
+
+part1:android app
+心得：
+*xml注释：<!--   -->
+*eclipse 代码提示快捷键:alt+/
+*eclipse改名快捷键:win+f2
+*textSize单位：pt
+*padding单位：dip
+*margin单位：px
+
+part2:Java SE
+重点：
+*sigleLine //当其值为true时，内容会在同一行显示
+*gravity
+
+

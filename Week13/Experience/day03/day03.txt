@@ -1,0 +1,21 @@
+﻿			day03
+				2017/1/9
+Mon:视频学习
+part1:andorid app
+心得：
+Mp3项目_代码编写_1
+*logcat 报错：device disconnected
+-->解决办法：
+	打开Eclipse的IDE：
+
+	1.1　　英文原版
+　window -> Show Views -> device -> view menu -> Reset adb
+　
+　　　  1.2　　中文版
+　窗口(W) -> 显示视图(V) ->Devices -> 视图菜单 ->Reset adb
+重启模拟器
+
+参考文档：http://blog.sina.com.cn/s/blog_ade1b8760101cnlr.html
+
+*logcat报错：附图
+-->解决办法：向main.xml文件中添加ListView文件

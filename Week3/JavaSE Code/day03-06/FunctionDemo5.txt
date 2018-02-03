@@ -1,0 +1,57 @@
+﻿class FunctionDemo4
+{
+	public static void main(String[] args)
+	{
+		print99();
+	
+		char  x=getLevel(85);
+		System.out.println(x=+x);
+	}
+		
+
+		
+			定义一个功能打印99乘法表
+			     
+			public static void print99()
+			{
+				for(int x=1;x=9;x++)
+				{
+				for(int y=1;y=x;y++)
+				{
+					System.out.print(y++x+=+yx+t);
+				}
+					System.out.println();
+				}
+			}
+			
+
+				
+				根据考试成绩获取学生分数对应的等级
+				90~100   A
+				80~89    B	
+				70~79    C
+				60~69    D
+				60以下   E
+
+				结果：等级，字符  char
+				参数：分数，int
+				
+
+public static char getLevel(int num)
+{
+	char level;
+	if(num=90&&num=100)
+	return 'A';
+	else if(num=80&&num=89)
+	return 'B';
+	else if(num=70&&num=79)
+	return 'C';
+	else if(num=60&&num=69)
+	return 'D';
+	else
+	return 'E';
+
+	
+}
+		
+}

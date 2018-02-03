@@ -1,0 +1,104 @@
+﻿import java.util.*; //实际开发
+
+class  ArrayDemo5
+{
+		public static void printArray(int [] arr)
+	{
+		//遍历数组的功能
+		System.out.print("[");
+
+		for(int x=0;x<arr.length;x++)
+		{
+			if(x!=arr.length-1)
+				System.out.print(arr[x]+", ");
+			else
+				System.out.print(arr[x]+"]");
+			
+		}
+	}
+
+	public static void swap(int[] arr,int a,int b)
+	{
+		int temp=arr[a];
+		arr[a]=arr[b];
+		arr[b]=temp;
+	}
+	
+
+	//选择排序
+
+	public static void main(String[] args) 
+	{
+		//需求：将如下这一数组内的元素从小到大/从大到小排序
+
+		int [] arr={14,45,32,6,78,50,47,106,21,55,43,12,10,87,401};
+
+//		printArray(arr);
+
+	/*
+	面试算法:背下来直接用
+	selectSort(arr);
+	bubbleSort(arr);
+	*/
+
+		Arrays.sort(arr); //实际开发
+		printArray(arr);
+	}
+
+	/*
+	public static void selectSort(int [] arr)
+	{
+		for(int x=0;x<arr.length-1;x++)
+		{
+			for(int y=x+1;y<arr.length;y++)
+			{
+				if(arr[x]>arr[y])     //if(arr[x]<arr[y] 从大到小排序 
+				{
+					int temp=arr[x];
+					arr[x]=arr[y];
+					arr[y]=temp;
+				}
+			}
+		}
+	}
+	*/
+
+	//冒泡排序
+
+/*
+public static void bubbleSort(int[] arr)
+	{
+	for(int x=0;x<arr.length-1;x++)
+		{
+		for(int y=0;y<arr.length-1-x;y++)
+			{
+			if(arr[y]>arr[y+1])
+				{
+				int temp=arr[y];
+				arr[y]=arr[y+1];
+				arr[y+1]=temp;
+				}
+			}
+		}
+	}
+*/
+
+	public static void bubbleSort(int[] arr)
+	{
+		for(int x=arr.length-1;x>0;x--)
+		{
+			for(int y=0;y<x;y++)
+			{
+				if(arr[y]>arr[y+1])
+				{
+					swap(arr,y,y+1); //提高代码复用性
+					/*
+				int temp=arr[y];
+				arr[y]=arr[y+1];
+				arr[y+1]=temp;
+				*/
+				}
+			}
+		}
+	}
+}

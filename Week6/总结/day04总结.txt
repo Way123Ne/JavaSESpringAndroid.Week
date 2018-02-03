@@ -1,0 +1,15 @@
+﻿			day04
+				2016/11/22
+Tue:视频学习
+
+part1:Android app
+*了解adb：android debug bridge
+*在path系统变量下配置adb变量
+*dos命令输入adb测试adb环境变量配置是否成功
+*在dos命令下使用adb访问SQLite（Linux)
+*增、删、改、查
+
+part2:Java SE
+*数组工具对象的建立
+*数组工具类中静态的使用
+

@@ -1,0 +1,24 @@
+﻿		 	day3
+				2016-10-17
+								
+Mon：视频学习
+
+part 1:Android app
+*初步了解Android的历史与发展
+*搭建Android开发环境步骤：
+①下载安装 adt bundle(集成好的IDE eclipse[已安装好ADT插件] 、SDK）
+②配置ANDROID_SDK_HOME环境变量用于存放AVD
+③启动eclipse创建第一个AVD
+*创建第一个Android应用程序
+*了解Android应用程序各个目录结构
+*AVD上运行已创建的第一个Android应用程序，进入该程序 显示Hello World界面
+
+part 2:Java SE
+*简单了解计算机语言
+*了解Java语言的跨平台原理（JVM)
+*学习JDK 中的命令行工具
+*学习Java语言中的命令行
+*记事本编写hello world.java，启动DOS命令通过javac对hello world.Java源代码进行编译，
+ 从而生成java class文件，再通过java命令将java class 文件在虚拟机中运行起来. 
+
+

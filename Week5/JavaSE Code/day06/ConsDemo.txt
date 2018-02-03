@@ -1,0 +1,76 @@
+﻿/*
+//创造函数：构建创造对象时调用的函数。作用：可以给对象进行初始化
+创建对象都必须要通过构造函数初始化
+
+一个类中如果没有定义过构造函数，那么该类中会有一个默认的空参数构造函数。
+如果在类中定义了指定的构造函数，那么累中的默认构造函数就没有了。
+*/
+
+/*
+一般函数和构造函数的区别？
+
+构造函数：对象创建后，就会调用于之对应的构造函数，对对象进行初始化
+一般函数：对象创建后，需要实现函数功能时才被调用
+
+构造函数：对象创建时，会调用只调用一次。
+一般函数：对象创建后，可以别调用多次
+*/
+
+/*
+什么时候定义构造函数？
+
+在描述事物时，该事物一存在就具备一些内容，这些内容都定义在构造函数中。
+*/
+
+class Person
+{
+	private int age;
+	private String name;
+
+	//定义一个Person类的构造函数
+	Person()//构造函数，而且是空参数的
+	{
+		name="baby";
+		age=1;
+		System.out.println("person run");
+	}
+
+	Person(String n)
+	{
+		name=n;
+	}
+
+	Person(String n,int m)
+	{
+		name=n;
+		age=m;
+	}
+
+	public void speak()
+	{
+	System.out.println(name+":"+age);
+	}
+}
+
+class consDemo
+{
+	public static void main(String[] args)
+	{
+	Person p=new Person();//(只可以被调用一次）构造函数:构造创建对象时调用的函数。作用：可以给对象进行初始化
+	
+	/*
+	一般函数可以别调用多次
+	speak();
+	speak();
+	*/
+
+//	p.speak();
+	
+	Person p1=new Person("王兵");
+	p1.speak();
+
+	Person p2=new Person("李四",8);
+	p2.speak();
+	}
+
+}

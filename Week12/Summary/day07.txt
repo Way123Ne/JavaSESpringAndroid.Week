@@ -1,0 +1,12 @@
+﻿			day07
+				2017/1/6
+Fri:视频学习
+part1:Git
+*忽略特殊文件
+*为Git配置别名
+*搭建Git服务器[为学，需linux系统的电脑]
+
+part2:Java SE
+*常用对象API
+1>String类-特点   2>String类-构造函数
+

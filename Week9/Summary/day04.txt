@@ -1,0 +1,17 @@
+﻿			day04
+				2016/12/13
+Tue:视频学习
+
+part1:Android app
+*bound service
+1>什么是bound service?
+2>Bound service与Start Service的区别
+3>如何将activity与service邦定
+
+
+part2:Java SE
+*异常
+1>应用  2〉注意事项
+*
+*
+*

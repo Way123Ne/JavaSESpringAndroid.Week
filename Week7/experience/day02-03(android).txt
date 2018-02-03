@@ -1,0 +1,43 @@
+﻿			day02-03
+				2016/11/27-28
+Sun&Mon:视频学习
+part1:Android app
+Http文件下载心得：
+具体参考文档：http://stackoverflow.com
+	      www.csdn.com
+
+1)java.io.IOException: open failed: EACCES (Permission denied)，openfailedeacces??
+  Android开发的时候使用虚拟机，一般都是因为你的SD卡(设置下大小：100M）没有挂载上去。使用真机测试就没有这个错误的了
+2）android联网权限：（放置在<mainfest>中即可）
+<uses-permission android:name="android.permission.INTERNET"/>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>(API 19 starting,before API19 no it)
+3)android.os.NetworkOnMainThreadException??(不能在主线程中访问网络)
+1>安卓2.3以后访问网络增加内容(setOnContent(R.layout.activity_main后）
+
+①:
+StrictMode.setThreadPolicy(new?StrictMode.ThreadPolicy.Builder();
+.detectDiskReads();
+.detectDiskWrites();
+.detectNetwork();
+.penaltyLog();
+.build());
+（不建议使用第一种方法）
+②:
+if (android.os.Build.VERSION.SDK_INT>9){
+StrictMode.ThreadPolicy policy=new StrictMode.ThreadPolicy.Builder().permitAll().build();
+StrictMode.setThreadPolicy(policy);}
+2>第二种采用异步方式
+3〉第三种采用线程的方式（与第二种类似 都是异步的方式）
+   将网络访问的操作单独放到一个线程中，代码如下：
+   newThread(){@Override  publicvoid run()
+   {//把网络访问的代码放在这里}
+}.start();
+参考：  (http://blog.csdn.net/maoranbian/article/details/41153739)
+4)java.net.ConnectException: failed to connect to /192.168.0.127 (port 8080):connect time out??
+模拟器默认把127.0.0.1和localhost当做本身了，在模拟器上可以用10.0.2.2代替127.0.0.1和localhost，
+另外如果是在局域网环境可以用 192.168.0.x或者192.168.1.x(根据具体配置)连接本机
+
+5）tomcat下载安装使用方法:(for j2ee)
+   使用前需配置好jdk
+   直接官方网站下载对应版本的压缩包--〉startup
+   无需在eclipse中安装server插件即可使用android http下载文件

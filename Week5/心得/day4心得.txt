@@ -1,0 +1,39 @@
+﻿			day4
+				2016/11/15
+Tue:视频学习
+
+part1:Android app
+*重点：
+*Toast使用方法
+//为RadioGroup设置监听器，需要注意的是，这里的监听器和Button控件的监听器有所不同?
+**代码：
+radiogroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {  
+  
+ public void onCheckedChanged(RadioGroup group, int checkedId) {  
+         
+// TODO Auto-generated method stub  
+               
+ if(femaleButton.getId() == checkedId){  
+                   
+ Toast.makeText(RadioGroupActivity.this, "female", Toast.LENGTH_SHORT).show();  
+                } 
+ 
+ else if(maleButton.getId() == checkedId){  
+                   
+ Toast.makeText(RadioGroupActivity.this, "male", Toast.LENGTH_SHORT).show();  
+                }  
+  
+    }  
+        });  
+    }  
+}  
+*写代码不能偷懒（复制、粘贴代码不可取）
+*实现同一需求可以采取多种不同的Android代码来完成
+
+
+part2:Java SE
+心得：
+*编码UTF-8比较好的兼容中文
+*类类型的变量要不指向对象，要不就是null
+*每天的学习尽可能不卷入其他事情中，尽可能避免被其他事情占用自己的学习时间
+ 可根据事情的具体情况再选择如何去做

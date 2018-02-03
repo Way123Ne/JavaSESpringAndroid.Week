@@ -1,0 +1,14 @@
+﻿		day01
+			2017/2/25
+Sat:视频学习
+part1:android app
+*用户定位(三) -->了解
+1>GeoCoder的替代方法 Google Geocoding API
+2>GeoCoding的返回值？
+GeoCodeResponse->status
+	       ->results(formatted_address、address_components、types)
+
+part2:Java SE
+*集合框架工具类
+1>常用对象API(集合框架-工具类-Collections-排序)
+

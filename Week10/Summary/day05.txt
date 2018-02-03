@@ -1,0 +1,15 @@
+﻿			day05
+				2016/12/21
+Wed:视频学习
+
+part1:android app
+*搭建mp3项目开发所需的android sdk版本并搭建新版本api的avd
+*解决logcat报错:ANR:KeyDispatchingTimeOut
+*[重点理解]logcat中各种错误（未学完）
+
+part2:Java SE
+*练习四_2详解
+*初步了解ASCII表[English]
+ http://tool.oschina.net/commons?type=4
+*初步了解GBK2312表[Chinese]
+ http://www.qqxiuzi.cn/zh/hanzi-gb2312-bianma.php

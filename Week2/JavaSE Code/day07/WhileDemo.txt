@@ -1,0 +1,21 @@
+﻿class WhileDemo
+{
+	public static void main(String[] args)
+	{
+
+	/*
+	while语句的表达形式
+	while(条件表达式)
+	{
+	执行语句；
+	}
+	*/
+
+	int x=4;
+	while(x<7)
+	{
+	System.out.println("x="+x); //while语句的循环体
+	x++;
+	}
+    }
+}

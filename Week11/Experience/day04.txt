@@ -1,0 +1,22 @@
+﻿			day04
+				2016/12/27
+Tue:视频学习
+心得：
+
+part1:andorid app
+*关于java中getInstance（）方法与new()的区别
+1>首先声明一下的是对于抽象类，要想对其实例化，只能用getInstance方法，是不能new出来的
+2>getInstance是方法,new是直接调用构造方法?
+其实质上,getInstance的实现还是一个new的过程,但是可以加以控制
+3>getinstance这个方法在单例模式用的甚多，为了避免对内存造成浪费，直到需要实例化该类的时候才将其实例化，所以用getInstance来获取该对象
+
+参考文档：http://blog.sina.com.cn/s/blog_468204610100sseb.html
+
+part2:Java SE
+*序列化与反序列化
+总结：
+1〉Java序列化是指把Java对象转换为字节序列的过程
+   Java反序列化是指把字节序列恢复为Java对象的过程
+2〉采用java序列化与反序列化技术，一是可以实现数据的持久化，在MVC模式中很有用
+   二是可以对象数据的远程通信
+参考文档：http://blog.csdn.net/wangloveall/article/details/7992448/

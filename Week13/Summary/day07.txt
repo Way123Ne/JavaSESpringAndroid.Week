@@ -1,0 +1,21 @@
+﻿			day07
+				2017/1/13
+Fri:视频学习
+part1:android app
+*DatePicker和DatePickerDialog的基本使用方法
+**创建DatePickerDialog的步骤：
+1〉声明一个监听器，使用匿名内部类
+2〉复写onCreateDialog(int id)方法
+3〉在你需要的时候调用showDialog方法
+*AutoCompleteTextView的使用方法
+**创建一个AutoCompleteTextView的方法
+1〉在布局文件中声明一个AutoCompleteTextView
+2>在res/layout文件夹下新建一个布局文件，名为list_item.xml
+3>AutoCompleteTextView需要使用ArrayAdapter来提供数据
+4〉为AutoCompleteTextView设置数据
+
+part2:Java SE
+*常用对象API
+1)String类-练习1-字符串数组排序
+2 String类-练习2-子串的次数
+3）String类-练习3-最大相同子串

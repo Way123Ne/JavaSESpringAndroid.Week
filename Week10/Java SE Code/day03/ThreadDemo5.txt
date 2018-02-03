@@ -1,0 +1,44 @@
+/*
+
+线程：
+
+1〉多线程运行图解
+
+2〉多线程运行时发生异常时的运行情况
+*/
+
+class Demo extends Thread
+{
+	private String name;
+	Demo(String name)
+	{	
+		  super(name);
+		//this.name = name;
+	}
+	public void run()
+	{
+		int[] arr = new int[3];
+		System.out.println(arr[3]);
+		for(int x=0; x<10; x++)
+		{
+			System.out.println(name+"...x="+x+"...name="+Thread.currentThread().getName());
+		}
+	}
+}
+
+class ThreadDemo5
+{
+	public static void main(String[] args)
+	{
+		//Thread t1 = new Thread();
+		
+		Demo d1 = new Demo("旺财");
+		Demo d2 = new Demo("xiaoqiang");
+		d1.start(); //开启线程，调用run方法
+
+		d2.start();
+
+		System.out.println(4/0); //throw new ArithmeticException();
+		System.out.println("over..."+Thread.currentThread().getName());
+	}
+}

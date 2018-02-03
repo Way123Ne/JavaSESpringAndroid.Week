@@ -1,0 +1,18 @@
+﻿			day05
+				2016/12/21
+Wed:视频学习
+
+part1:andorid app
+心得：
+*logcat报错
+1〉ANR:KeyDispatchingTimeOut
+参考文档：
+http://www.360doc.com/content/12/0226/15/7635_189765894.shtml
+[重点掌握：logcat中的报错] http://blog.csdn.net/jincf2011/article/details/6334842
+[靠谱]http://stackoverflow.com/questions/3467205/android-key-dispatching-timed-out
+
+*添加不同版本的android sdk 
+1〉行不通--〉自己搭建FQ
+2>修改hosts文件，android sdk manager-->options--->勾选forces https....
+3〉手动添加——〉androiddevtools website & android studio
+4〉重新启动eclipse，compilesdk&avdsdk出现新添加的版本

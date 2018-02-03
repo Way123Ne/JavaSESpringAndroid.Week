@@ -1,0 +1,11 @@
+﻿			day06
+				2016/12/29
+Thu:视频学习
+
+part1:android app
+*初步学习Git-flow工作流
+*搭建Git环境并注册Github帐户
+*继续学习logcat各种常见报错类型
+
+part2:Java SE
+*多线程间通信-式例 

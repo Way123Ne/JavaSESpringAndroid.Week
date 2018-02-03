@@ -1,0 +1,21 @@
+﻿			day06
+				2016/12/15
+Thu:视频学习
+
+part1:android app
+心得：
+*Minimum Required SDK、TargetSDK、compile with 、AVD API
+1、Minimum Required SDK  最小需要的SDK，指定你所开发的应用的最低运行的SDK环境，
+   如果指定API-11，[ 则在API-10版本SDK的设备上根本不能安装成功--->重点理解]
+
+2、Target SDK 目标SDK，你所开发的应用程序支持最高的SDK版本，
+   每次SDK版本更新之后要在新版本上测试应用，修改为最近的SDK。
+
+2、compile with 编译的SDK版本，个人理解，对于编译版本以下的SDK版本，
+   有些新特性不支持，使用 [ 重点：support libs] 进行向后兼容，对于大于compile版本的SDK，
+   安卓本身是向前兼容的（兼容更高的版本）所以不需担心。
+
+*重点：support libs {未完}
+1〉V4、V7
+
+*lrc:歌词文件[文本]

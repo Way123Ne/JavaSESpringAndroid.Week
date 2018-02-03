@@ -1,0 +1,14 @@
+﻿			day4
+				2016/11/15
+Tue:视频学习
+
+part1:Android app
+*Toast使用方法（RadioGroup、RadioButton)
+*ProgressBar的使用方法（visibility)
+
+part2:Java SE
+*对象的内存体现
+*成员变量和局部变量之间的区别
+*成员变量和局部变量同名&显示初始化
+*类类型参数
+

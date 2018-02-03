@@ -1,0 +1,47 @@
+﻿class Outer
+{
+	private static int num=45;
+	
+	static class Inner //内部类
+	{
+		void show()
+		{
+			System.out.println("show run..."+num);
+		}
+		
+		static void function()
+		{
+			System.out.println("function run..."+num);
+		}
+		
+	}
+	
+	public void method()
+	{
+		Inner in=new Inner();
+		in.show();
+	}
+}
+
+class InnerClassDemo2
+{
+	public static void main(String[] args)
+	{
+		//Outer out=new Outer();
+		//out.method();
+
+		//直接访问外部类中的内部类中的成员
+		//Outer.Inner in=new Outer().new Inner();
+		//in.show();
+
+		//如果内部类是静态的，相当于一个外部类
+		//Outer.Inner in=new Outer.Inner();
+		//in.show();
+
+		//如果内部类是静态的，成员是静态的
+		Outer.Inner.function();
+		
+
+
+	}
+}

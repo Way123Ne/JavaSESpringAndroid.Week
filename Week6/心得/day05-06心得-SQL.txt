@@ -1,0 +1,25 @@
+﻿			day05-06
+				2016/11/23-24
+Wed&Thu:视频学习
+
+part1:Android app
+
+SQLite心得：main.xml(tools:context="${relativePackage}.${activityClass}")
+①找到准确的源代码-->网上的一些学习资料不是十分准确
+②寻找问题答案时尽可能寻找到最佳的提问方式--〉增加找到答案的准确率，减少时间
+③Linux命令行调试mysqlite--〉多尝试搜索不同资料，多使用google搜索
+
+重点：Linux命令行调试mysqlite
+adb->adb shell->ls -l->cd data->cd data->cd com.Wayne.mysqlite(包名）
+->cd databases(模拟器里面添加数据库按钮之后这个databases文件夹才会生成，里面有一个lib文件)
+->cd sqlite3 mydata_base(想要通过命令行输入 SQL 语句，必须先输入： sqlite3 数据库名)
+->进入sqlite命令环境，可以使用SQL语句，例如 .schema和SELECT * FROM user
+ 
+参考文档：CSDN博客
+1.mysqlite源代码：http://blog.csdn.net/u011758031/article/details/48214393
+2.Linux命令行调试mysqlite：http://blog.csdn.net/u011758031/article/details/48214393
+		           http://blog.csdn.net/sam_zhang1984/article/details/6214876
+注释：
+*心态非常重要
+*补充计算机方面的基础知识
+**shell、cmd、dos和脚本语言简单了解 http://blog.163.com/magicc_love/blog/static/185853662201542121036153/

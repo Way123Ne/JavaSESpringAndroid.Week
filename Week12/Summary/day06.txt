@@ -1,0 +1,10 @@
+﻿			day06
+				2017/1/5
+Thu:视频学习
+part1:Git
+*使用GitHub
+*自定义Git
+
+part2:Java SE
+*多线程
+1〉守护线程-setDaemon 2〉其他方法-join等  3〉面试题

@@ -1,0 +1,31 @@
+﻿			day07
+				2017/1/6
+Fri:视频学习
+part1:Git
+Git心得：
+*忽略特殊文件
+按照linux的方式来新建.gitignore文件。
+具体步骤如下：
+
+
+1. 在需要创建  .gitignore 文件的文件夹, 右键选择
+
+Git Bash 进入命令行，进入项目所在目录。
+
+
+2. 输入 touch .gitignore 在文件夹就生成了一个“.gitignore”文件。
+
+然后在”.gitignore” 文件里输入你要忽略的文件夹及其文件就可以了。
+3.然后用编辑器打开这个文件进行编辑就行了。如果你很牛，熟悉linux下的vi编辑的命令，
+  也可以用命令来声明规则额。在这里就不说了额，
+附： vi编辑器的怎么换行呢？
+
+总结：vi保存退出命令x和wq的区别
+
+搜集：不会linux下vi命令，伤不起啊
+4.然后就写规则来操作要忽略的文件了。.gitignore文件过滤有两种模式，开放模式和保守模式
+
+参考文档：https://zhidao.baidu.com/question/2053485325521871027.html?qbl=relate_question_0&word=git%C8%E7%BA%CE%BA%F6%C2%D4%CC%D8%CA%E2%CE%C4%BC%FE
+
+*搭建Git服务器[linux上搭建]
+1〉windows上搭建比较坑

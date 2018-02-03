@@ -1,0 +1,16 @@
+﻿			day03
+				2017/1/16
+Mon:视频学习
+part1:andorid app
+*使用SeekBar的步骤
+1〉在布局文件中声明SeekBar
+2>定义一个OnSeekBarChangeListener
+*使用RatingBar的步骤
+1>在布局文件中声明RatingBar
+2>定义一个OnRatingBarChangeListener
+
+part2:Java SE 
+*常用对象API
+1>StringBuilder类    2〉StringBuilder类-练习
+3〉基本数据类型对象包装类-概述
+

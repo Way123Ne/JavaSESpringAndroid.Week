@@ -1,0 +1,20 @@
+﻿			day02&03
+				2016/12/4-5
+Sun&Mon:视频学习
+
+part1:Android app
+BroadcastReceiver心得：
+*报错：
+①service com.android.exchange.exchangeService has leadked serviceconnection...com.
+  android.emailcommon.service.serviceproxy$proxyconnection@40d5d768 that was riginally here
+①-〉上面的异常大概是报了启动service后，没有将service给unbound掉，
+     需要对模拟器进行一些设置，禁用此类无关的应用，具体操作为：
+“设置”---->"所有应用"---->"Exchange Services"--->“disable”
+②android设置中没有exchange service选项？
+  原生系统的mail自7.0开始
+Google将Android的邮件的功能整合到Gmail 5.0中了
+  要在这个Gmail里使用Exchange，需要额外安装Google提供的exchange service（注意下载的版本）
+
+WIFI心得：
+*多看Android官方文档
+*android wifi需真机运行

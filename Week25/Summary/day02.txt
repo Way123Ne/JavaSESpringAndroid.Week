@@ -1,0 +1,9 @@
+﻿		day02
+			2017/4/2
+Sun:视频学习
+part1:Java SE
+*IO流
+1>ObjectOutputStream-对象的序列化
+2>ObjectInputStream-对象的反序列化
+3>序列化接口-Serializable
+4>关键字-transient

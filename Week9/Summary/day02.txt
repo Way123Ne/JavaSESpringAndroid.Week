@@ -1,0 +1,18 @@
+﻿			day02
+				2016/12/11
+Sun:视频学习
+
+part1:Android app
+*什么是Socket
+*Socket基本通信模型
+*使用基于TCP协议的Socket
+*使用基于UDP协议的Socket
+*TCP通信
+1〉客户端Socket（输出流OutputStream-->服务端输入流InputStream）
+2〉服务端ServerSocket(输出流OutputStream--〉客户端输入流InputStream）
+
+part2:Java SE
+*异常
+1〉原理&异常对象的抛出throw
+2> 自定义异常&异常类的抛出throws
+3> 编译时检测异常和运行时异常的区别

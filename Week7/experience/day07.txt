@@ -1,0 +1,12 @@
+﻿			day07
+				2016/12/2
+Fri:视频学习
+part2:Java SE
+心得：
+*Person p=new Person
+ 类类型的变量：
+ Person类型的引用指向了Person的对象
+*接口类型的引用：指向的都是自己的子类对象
+
+
+	

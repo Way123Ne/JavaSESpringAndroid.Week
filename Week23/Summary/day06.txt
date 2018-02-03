@@ -1,0 +1,11 @@
+﻿		day06
+			2017/3/23
+Thu:视频学习
+part1:android app
+*Http操作（三）
+1>HTTP请求的方法
+2>使用GET方法发送请求
+3>使用POST方法发送请求
+
+part2:Java Spring
+*spring视频教程.第10讲.装配Bean(二)

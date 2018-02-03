@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:context="http://www.springframework.org/schema/context"
+		xmlns:tx="http://www.springframework.org/schema/tx"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+				http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+				http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+<bean id = "personService" destroy-method="mydestory" class = "com.wayne.beanlife.PersonService">
+<!-- 这里我们注入属性，前提需要有setName才能ok -->
+<property name="name">
+<value>xiaoming</value>
+</property>
+</bean>
+
+<!-- 配置我们的自己的后置处理器(有点类似我们的filter) -->
+<bean id="myBeanPostProcessor" class="com.wayne.beanlife.MyBeanPostProcessor"/>
+
+</beans>

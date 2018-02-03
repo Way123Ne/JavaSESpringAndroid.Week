@@ -1,0 +1,18 @@
+﻿			day02
+				2016/12/4
+Sun:视频学习
+
+part1:Android app
+*注册BroadcastReceiver的方法
+**BroadcastReceiver用于监听被广播的事件(Intent)，为达到这个目的，
+  BroadcastReceiver必须进行注册，注册的方法有以下两种：
+①动态注册：在应用程序的代码中进行注册
+②静态注册：在androidmainfest.xml中进行注册
+*Android内置的Broadcast Actions
+**一些较常见的Action如下：
+①ACTION CAMERA BUTTON ②ACTION BATTERY LOW ③ACTION DATE CHANGED
+④ACTION POWER CONNECTED ⑤ACTION REBOOT ⑥ACTION SCREEN ON
+
+part2:Java SE
+*多态
+①转型 ②类型判断-instanceof ③成员变量

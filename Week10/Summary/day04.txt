@@ -1,0 +1,10 @@
+﻿			day04
+				2016/12/20
+Tue:视频学习
+
+part1:andorid app
+*编写mp3项目代码_1
+*解决logcat中报错：error opening trace file: No such file or directory错误
+
+part2:Java SE
+*练习四_1解析

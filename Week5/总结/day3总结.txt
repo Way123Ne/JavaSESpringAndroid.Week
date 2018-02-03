@@ -1,0 +1,19 @@
+﻿			day3
+				2016/11/14
+Mon:视频学习
+
+part1:Android app
+*TableLayout使用方法
+*LinearLayout的嵌套
+①LinearLayout中嵌套LinearLayout
+②LinearLayout中嵌套TableLayout
+*相对布局基本概念及其属性
+*相对布局与其它布局的区别
+
+part2:Java SE
+*面向对象的举例
+*类与对象之间
+①关系 ②体现
+③体现注意细节(类中的成员）
+
+

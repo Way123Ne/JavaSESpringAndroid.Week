@@ -1,0 +1,16 @@
+﻿part1:Java反射机制
+/*
+ *Java反射机制是在运行状态中，对于任意一个类(class)文件，都能够知道这个类的所有属性和方法
+ *对于任意一个对象，都能够调用它的任意一个方法和属性
+ *这种动态获取的信息以及动态调用对象的方法的功能称为java语言的反射机制
+ *
+ *动态获取类中的信息，就是java反射
+ *可以理解为对类的解剖。
+ */
+
+part2:杂总结
+1>具有构造方法的类可以实例化 new or instance
+ 抽象类不能直接实例化new object or instance,需要子类继承并覆盖父类中的方法 进行实例化
+2>父类  父类 = new 子类(); //多态的体现
+3>Exception in thread "main" java.lang.NullPointerException ->23行未实例化
+	at wayne.c1.io.filewriter.IOExceptionDemo.main(IOExceptionDemo.java:23)

@@ -1,0 +1,54 @@
+﻿/*
+笔记本电脑使用
+为了扩展笔记本的功能，但日后出现什么功能设备不知道
+
+定义一个规则，只要日后出现的设备都符合这个规则就可以了
+规则在java中就是接口
+
+*/
+
+interface USB
+{
+		public void open();
+		public void close();
+}
+
+class BookPC
+{
+	public static void main(String[] args)
+	{
+		useUSB(new Upan());  //new Upan 子类
+		useUSB(new UsbMouse());  //new UsbMouse 子类
+	}
+	public static void useUSB(USB u)  //接口类型的引用：用于接收（）/指向自己的子类对象
+	{
+		u.open();
+		u.close();
+	}
+}
+
+//一年后
+class Upan implements USB
+{
+	public void open()
+	{
+		System.out.println("upan open");
+	}
+	public void close()
+	{
+		System.out.println("upan close");
+	}
+}
+
+class UsbMouse implements USB
+{
+	public void open()
+	{
+		System.out.println("UsbMouse open");
+	}
+	public void close()
+	{
+		System.out.println("UsbMouse close");
+	}
+}
+

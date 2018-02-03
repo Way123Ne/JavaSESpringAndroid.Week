@@ -1,0 +1,74 @@
+﻿/*
+面试题1：
+class Test implements Runnable
+{
+	public void run(Thread t)
+	{
+	}
+}
+
+
+问：如果错误，错误发生在哪一行？
+	  第一行出错，类Test应该被abstract修饰
+---------------------------------------------------
+---------------------------------------------------
+面试题2：
+class ThreadTest
+{
+	public static void main(String[] args)
+	{
+		new Thread(new Runnable()
+		{
+			public void run()
+			{
+				System.out.println("runnable run");
+			}
+		})
+		{
+			public void run()
+			{
+				System.out.println("subThread run");
+			}
+		}.start();	
+	}
+}
+
+问：输出那条语句？输出子类的输出语句
+*/
+
+
+/*
+class ThreadTest
+{
+	public static void main(String[] args)
+	{
+		new Thread()
+		{
+			public void run()
+			{
+				for(int x=0; x<50; x++)
+				{
+					System.out.println(Thread.currentThread().getName()+"....x="+x);	
+				}
+			}
+		}.start();
+
+				for(int x=0; x<50; x++)
+				{
+					System.out.println(Thread.currentThread().getName()+"....y="+x);	
+				}
+
+				Runnable r = new Runnable()
+				{
+					public void run()
+					{
+						for(int x=0; x<50; x++)
+						{
+							System.out.println(Thread.currentThread().getName()+"....z="+x);	
+						}
+					}
+				};	
+				new Thread(r).start();
+	}
+}
+*/

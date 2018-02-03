@@ -1,0 +1,10 @@
+﻿		day04
+			2017/3/14
+Tue:视频学习
+part1:Java SE
+*IO流
+1>字符流-缓冲区-自定义MyBufferedReader-read方法
+2>字符流-缓冲区-自定义MyBufferedReader-readLine方法
+
+part2:Java Spring
+*第5讲.Bean工厂和ApplicationContext

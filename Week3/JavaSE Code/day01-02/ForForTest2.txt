@@ -1,0 +1,67 @@
+﻿class  ForForTest2
+{
+	public static void main(String[] args) 
+	{
+
+		/*
+		利用for语句嵌套结构完成下图
+		*
+		**
+		***
+		****
+		*****
+		
+		int z=1;
+		for(int x=1;x<=5;x++)   //5行
+		{
+			for(int y=1;y<=z;y++)  //1;1-2;1-3;1-4;1-5
+			{
+				System.out.print("*");
+			}
+			z++;
+			System.out.println();
+	    }
+			*/
+
+			/*
+			利用for语句嵌套结构完成下图
+			54321
+			5432
+			543
+			54
+			5
+			
+			
+			int c=1;
+			for(int a=1;a<=5;a++)  //5行
+			{
+				for(int b=5;b>=c;b--)  //5-1;5-2;5-3;5-4;5
+				{
+					System.out.print(""+b);
+				}
+				c++;
+				System.out.println();
+				}
+				*/
+
+			   	 /*
+				利用for语句嵌套结构完成下图
+				1
+				22
+				333
+				4444
+				55555
+				*/
+ 
+					
+					for(int e=1;e<=5;e++)  
+					{
+						for(int f=1;f<=e;f++)  
+						{
+							System.out.print(e);
+						}
+							System.out.println();
+					}
+			}
+    }
+	

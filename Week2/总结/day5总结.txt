@@ -1,0 +1,17 @@
+﻿			day5
+				2016/10/26
+Wed:视频学习
+
+part1:Android app
+*LinearLayout布局的嵌套
+*Layout_weight属性
+*使用Layout_weight的要点
+①子控件并未占据父控件的所有空间
+②Layout_weight的值用于指定空闲空间的分配比例
+
+part2:Java SE
+*程序流程控制 
+①判断结构：if语句三种格式（见Ifdemo 源代码）
+
+
+

@@ -1,0 +1,13 @@
+﻿			day05
+				2016/12/14
+Wed:视频学习
+
+part1:android app
+*Parcel对象的基本使用方法
+*transact方法与onTransact方法
+
+part2:Java SE
+*Object类[重点]
+1〉equals方法   2〉equals方法覆盖
+3〉hashCode方法 4〉getClass方法
+5〉toString方法

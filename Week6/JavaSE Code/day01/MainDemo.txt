@@ -1,0 +1,33 @@
+﻿/*
+public static void main(String[] args)
+
+主函数特殊之处：
+1.格式是固定的
+2.被告jvm所识别和调用
+
+public:因为权限必须是最大的
+static:不需要对象的，直接用主函数所属类名调用即可
+void:主函数没有具体的返回值
+main:函数名，不是关键字，只是一个jvm识别的固定的名字
+String[] args:这是主函数的参数列表，是一个数组类型的参数
+args:arguments 形式参数
+*/
+
+
+class  MainDemo 
+{
+	public static void main(String[] args)  //new String[0]
+	{
+	//	System.out.println(args);   //[Ljava.lang.String;@490eb6ae
+	//	System.out.println(args.length); //主函数默认角标长度为0
+	//	System.out.println(args[0]); //ArrayIndexOutOfBoundsException
+	for(int x=0;x<args.length;x++)
+		{
+			System.out.println(args[x]);  //java MainDemo haha xixi heihei
+		}
+
+		/*
+		public static void main(int[] x) //String[] x  两个入口不可取
+		{}
+		*/
+}

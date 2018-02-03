@@ -1,0 +1,26 @@
+﻿			day04
+				2017/2/7
+Tue:视频学习
+
+part1:android app
+*Animations使用(四)
+1〉LayoutAnimationController的使用方法
+**什么是LayoutAnimationController?
+a)~用于为一个layout里面的控件，或者是一个ViewGroup里面
+   的控件设置动画效果
+b)每一个控件都有相同的效果
+c)这些控件的动画效果在不同的时间表现出来
+d)~可以在xml文件中设置，也可以在代码中进行设置
+2〉ListView与Animations结合使用
+3〉AnimationListener的使用方法
+**什么是AnimationListener?
+a)~是一个监听器
+b)该监听器在动画执行的各个阶段会得到通知，从
+  而调用相应的方法
+c)主要包含三个方法
+
+part2:Java SE
+*常用对象API
+1>集合框架-哈希表_1
+2>集合框架-哈希表_2
+3〉集合框架-HashSet存储自定义对象

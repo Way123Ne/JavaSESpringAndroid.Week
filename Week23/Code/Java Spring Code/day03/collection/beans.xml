@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:context="http://www.springframework.org/schema/context"
+		xmlns:tx="http://www.springframework.org/schema/tx"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+				http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+				http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+<bean id="department" class="com.wayne.collection.Department">
+<property name="name" value="财务部"></property>
+
+<!-- 内部bean :property name="name">
+	<bean id = "">
+		<property name =""></property>
+	</bean>
+	</property>
+ -->
+ 
+<!-- 给数组注入值 -->
+<property name="empName">
+	<list>
+	<value>小宋</value>
+	<value>小张</value>
+	<value>小王</value>
+	</list>
+</property>
+
+<!-- 给List注入值,List无序取出，并且可以取出多个相同元素 -->
+<property name="empList">
+	<list>
+		<ref bean="emp1"/>
+		<ref bean="emp2"/>
+		<ref bean="emp1"/>
+		<ref bean="emp1"/>
+		<ref bean="emp2"/>
+		<ref bean="emp2"/>
+	</list>
+</property>
+
+<!-- 给set注入值 ，Set有序取出，并且不可以取出多个相同元素-->
+<property name="empSets">
+	<set>
+		<ref bean="emp1"/>
+		<ref bean="emp2"/>
+	</set>
+</property>
+
+<!-- 给Map注入值 -->
+<property name = "empMaps">
+	<map>
+		<entry key="1" value-ref="emp1"></entry>
+		<entry key ="122" value-ref="emp2"></entry>
+	</map>
+</property>
+
+<!-- 给Properties集合配置 -->
+<property name="pp">
+	<props>
+		<prop key="pp1">abcd</prop>
+		<prop key="pp2">abc</prop>
+	</props>
+</property>
+</bean>
+
+<bean id="emp1" class="com.wayne.collection.Employee">
+<property name="name" value="北京"></property>
+<property name="id" value="1"></property>
+</bean>
+
+<bean id="emp2" class="com.wayne.collection.Employee">
+<property name="name" value="天津"></property>
+<property name="id" value="122"></property>
+</bean>
+
+</beans>

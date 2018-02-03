@@ -1,0 +1,53 @@
+﻿class IfTest
+ {
+	public static void main(String[] args)
+	{
+	
+	/*
+	需求：根据用户指定的具体数据，判断该数据对应的星期。
+	例：1-星期一-Monday
+
+	思路：	
+	用户输入无法获取但是那只是具体数据的一种获取手段而已。
+	而要做的功能仅仅是对用户指定的数据进行对应星期的打印输出而已。
+	
+	因此具体的数据不确定，完成该功能可以使用变量来表示。
+
+	因此只需对变量进行操作即可。至于变量的值，由用户来决定
+	*/
+	
+	int week=1;
+	if(week==1)
+	{
+	System.out.println(week+"对应的是星期一");
+	}
+	else if(week==2)
+	{
+	System.out.println(week+"对应的是星期二");
+	}
+	else if(week==3)
+	{
+	System.out.println(week+"对应的是星期三");
+	}
+	else if(week==4)
+	{
+	System.out.println(week+"对应的是星期四");
+	}
+	else if(week==5)
+	{
+	System.out.println(week+"对应的是星期五");
+	}
+	else if(week==6)
+	{
+	System.out.println(week+"对应的是星期六");
+	}
+	else if(week==7)
+	{
+	System.out.println(week+"对应的是星期日");
+	}
+	else
+	{
+	System.out.println("没有对应的星期");
+	}
+    }
+}

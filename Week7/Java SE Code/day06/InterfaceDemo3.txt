@@ -1,0 +1,58 @@
+﻿interface A
+{
+	public void show();
+}
+
+interface Z
+{
+	public int add(int a,int b);
+}
+
+/*
+一个类在继承另一个类的同时，还可以实现多个接口
+
+*/
+
+class Q
+{
+	public void method()
+	{}
+}
+abstract class Test2 extends Q implements A,Z
+{
+}
+/*
+接口的出现避免了单继承的局限性
+*/
+interface CC
+{
+	void show();
+}
+interface MM
+{
+	void method();
+}
+
+interface QQ extends CC,MM //接口与接口之间是继承的关系，而且接口可以多继承
+{
+	void function();
+}
+
+class WW implements QQ
+{
+//覆盖了三个方法
+	public void show(){}
+	public void method(){}
+	public void function(){}
+}
+
+class InterfaceDemo
+{
+	public static void main(String[] args)
+	{
+		Test t=new Test();
+		t.show();
+	}
+}
+
+

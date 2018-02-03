@@ -1,0 +1,26 @@
+﻿			day5
+				2016/11/9
+Wed：视频学习
+
+part1:Android app
+*Intent的基本作用
+**一个Intent对象包含了一组信息
+①Component name ②action ③Data
+④Category(未学） ⑤Extras ⑥Flags(未学）
+*多个Activity之间的关系
+**Activity01-----------------------------Activity02
+ 	     startActivity(Intent intent)   
+*Intent基本使用方法
+*创建一个 两个整数相乘求运算乘积的结果的小程序
+
+part2:Java SE
+*数组排序的方法
+①选择排序
+②冒泡排序
+*排序位置置换代码提取，即高代码的复用性
+*面试与实际开发中数组排序(选择/冒泡排序）所使用的不同方法
+
+
+
+
+

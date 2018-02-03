@@ -1,0 +1,24 @@
+﻿			day7
+				2016/10/28
+Fri:视频学习
+
+part1:Android app
+*什么是相对布局(RelativeLayout)
+*相对布局的作用
+*相对布局的两种常用属性
+**第一组相对布局的属性
+①android:layout_below ②android:layout_above
+③android:layout_toLeftof ④android:layout_toRightof
+**第二组相对布局的属性
+①android:layout_alignLeft ②android:layout_alignRight
+③android:layout_alignTop  ④android:layout_alignBottom
+
+aprt2:Java SE
+*循环结构代表语句
+①while  ②do while  ③for(未学）
+*while 语句格式
+*do while 语句格式
+①格式   ②特点：无论条件是否满足，循环体至少执行一次
+*while 小练习（见Java SE源代码）
+①获取1~10，10个数相加的和（重点掌握累加思想）
+②求1~100之间6的倍数出现的次数

@@ -1,0 +1,19 @@
+﻿			day4
+				2016/10/25
+Tue:视频学习
+
+part1:Android app
+心得：
+*向drawable-hdpi文件中拷贝图片注意事项
+①drawable里文件的命名,只能是用用小写字母和数字命名图片文件
+②drawable里文件的格式，建议是png格式
+③ScaleType属性简单总结
+**CENTER（将图片放在ImageView中间）
+**FIT（将图片尽可能填满整个ImageView)
+④SD卡里的文件命名也和这个一样只能小写字母加数字
+
+part2:Java SE
+心得：
+*二元运算符：+ - * / %
+*一元运算符：++ -- ~
+*表达式：即 具有一定语法规则的语句。

@@ -1,0 +1,41 @@
+﻿class ForForDemo
+{
+	public static void main(String[] args)
+	{
+
+		/*
+		大圈套小圈思想
+		
+		for(int a=0;a<4;a++)
+		{
+			for(int b=1;b<3;b++)
+				{
+					System.out.println("ok");
+				}
+		}
+		*/
+
+		
+		/*
+		需求：利用for语句的嵌套结构完成下图
+		*****
+		*****
+		*****
+		*****
+
+		for(int y=0;y<4;y++)
+		{
+			System.out.println("*****");
+		}
+		*/
+
+		for(int x=0;x<4 ;x++ ) //外循环控制行数
+		{
+			for(int y=0;y<5;y++)  //内循环控制每行的个数
+			{
+			System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+}

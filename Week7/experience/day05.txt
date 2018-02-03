@@ -1,0 +1,15 @@
+﻿			day05
+				2016/11/30
+Wed:视频学习
+ 
+part1:Android app
+心得：
+*先打开avd,之后建立与avd api相对应的project
+*安装（run as)-->三角符号（运行）
+*网上多找找相同的开源学习资料
+*ContentProvider一般可以不用自己实现，往往实际开发中由android提供
+
+Java SE
+心得：
+*java 支持Unicode万国码
+

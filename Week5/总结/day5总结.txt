@@ -1,0 +1,18 @@
+﻿			day5
+				2016/11/16
+Wed:视频学习
+
+part1:Android app
+*ProgressBar的visibility属性
+*ListView
+①概念 ②使用方法
+
+part2：Java SE
+*匿名对象
+①概念 ②使用方法
+*参数传递图解
+①基本数据类型参数传递 ②引用数据类型参数传递
+*弹栈和压栈
+*封装
+①概念 ②好处 ③封装的原则 
+*封装的思想

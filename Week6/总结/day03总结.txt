@@ -1,0 +1,19 @@
+﻿			day03
+				2016/11/21
+Mon：视频学习
+
+part1:Android app
+*SQLite简介
+*SQLiteOpenHelper的使用方法
+①getReadableDatabase()  ②getWritableDatabse()
+③onCreate(SQLiteDatabase db)  ④onOpen(SQLiteDatabase db)
+⑤onUpgrade(SQLiteDatabase db,int oldVersion,int newVersion)
+⑥close()
+*将eclipse上的小项目导出到电脑上，将其apk文件在真机上运行
+
+part2:Java SE
+*static关键字
+①什么时候使用？②静态代码块
+*构造代码块
+①概念 ②作用
+

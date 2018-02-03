@@ -1,0 +1,19 @@
+﻿			day02
+				2017/1/15
+Sun:视频学习
+part1:andorid app
+*ExpandableListActivity的基本使用方法
+**创建ExpandableListActivity的步骤：
+1〉在布局文件中声明ExpandableListActivity控件
+2〉在布局文件中声明groupde的样式：group.xml
+3> 在布局文件中声明子项的样式：child.xml
+4> 创建一个Activity，继承ExpandableListActivity
+5> 为group创建数据     6〉为child创建数据
+*SimpleExpandableListAdapter的基本使用方法
+
+part2:Java SE 
+*常用对象API
+1〉String类-练习4-去处字符串两端空白
+2〉StringBuffer类-特点&添加功能
+3〉StringBuffer类-插入&删除&查找&修改
+4〉StringBuffer类-可变长度数组

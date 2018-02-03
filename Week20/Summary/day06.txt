@@ -1,0 +1,21 @@
+﻿		day06
+			2017/3/2
+Thu:视频学习
+part1:android app
+*GoogleMap(三)
+1>Projectiond的作用
+a)将地图上的经纬度坐标转化成为屏幕上的x轴和y轴的坐标
+  android.graphics.Point toPixels(GeoPoint,android.graphics.Pointout)
+b)将x轴和y轴的坐标转换成地图上的经纬度坐标
+  GeoPoint fromPixels(intx,int y)
+2>在GoogleMap上绘制直线的方法
+3>绘制路线的步骤
+a)确定线路的起始和终止的经纬度坐标
+b)在起点和终点上绘制图标
+c)将经纬度坐标换算成屏幕上的x轴/y轴坐标
+d)在起点和终点间绘制路线
+
+part2:Java SE
+*集合框架工具类
+1>常用对象API(集合框架-JDK5.0特性-函数可变参数
+2>常用对象API(集合框架-JDK5.0特性-静态导入)

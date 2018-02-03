@@ -1,0 +1,27 @@
+﻿				day1&day2
+				  	   2016/10/15-16
+Sat&Sun:搭建java开发环境&搜索学习资料
+
+总结：
+      *下载并安装Java开发工具eclipse
+      *下载并安装JDK
+      *配置JDK的三个系统环境变量
+       ①CLASSPATH②JAVA_HOME③PATH
+      *验证环境变量是否配置成功
+     （dos命令中分别输入java、javac、java)
+
+搜索学习资料:
+part1:Android app 开发
+①Mars的Android开发视频教程（目前正在学习，个人感觉很好）
+②老罗Android开发视频教程（安卓巴士）
+③Android开发视频教程,Android深入浅出,Android高级应用课程（讲师：Sunday）    
+
+part2:Java SE 基础
+①传智播客-毕向冬-历经5年锤炼(史上最适合初学者入门的Java基础视频)[目前正在学习]
+
+
+
+
+ 
+
+

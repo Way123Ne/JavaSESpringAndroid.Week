@@ -1,0 +1,23 @@
+﻿			day07
+				2016/11/25
+Fri:视频学习
+
+part1:Android app
+调试程序心得：
+*Logcat
+①VERBOSE ②DEBUG ③INFO ④WARN ⑤ERROR
+*file explorer
+①push a file on to device ②pull a file from device
+
+常见错误：（Unfortunately，xxx has stopped)
+	 ①Logcat-->error-->Message
+	 ②Message-->package name:android(android support)
+	 ③Message-->package name:com
+	 ④Message-->package name:java(java package)
+ 	 ⑤Message-->package name:dalvik(virture machine package)
+	 ⑥Message-->package name:find package that belongs to yourself(error place)
+
+
+
+
+

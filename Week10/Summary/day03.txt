@@ -1,0 +1,12 @@
+﻿			day03
+				2016/12/19
+Mon:视频学习
+
+part1:android app
+*JavaWeb服务器Tomcat下载及其使用方法
+*如何在服务器（Tomcat）端搭建webapps
+
+part2:Java SE
+*多线程
+1〉Thread类中的方法&线程名称
+2〉多线程运行图解

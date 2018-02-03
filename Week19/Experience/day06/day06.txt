@@ -1,0 +1,16 @@
+﻿		day06
+			2017/2/23
+Thu:视频学习
+part1:Eclipse 使用问题？->Experience->day06
+
+1>Adb connection Error:远程主机强迫关闭了一个现有的连接?
+  eclipse中视图模式选择DDMS(还有常见的java和debug视图)， 显示Devices窗口，若无可通过选择window->show view->Devices显示，
+  再选择下拉箭头中的reset adb。
+
+参考文档：http://blog.csdn.net/phenixyf/article/details/51018316
+
+2>eclipse工作空间里项目突然都没有了，如何重新找回来?
+  切换一下左侧的视图，一共有两种，package explorer和project explorer，
+  在window->view中可以打开
+
+参考文档：https://zhidao.baidu.com/question/496929329657616684.html

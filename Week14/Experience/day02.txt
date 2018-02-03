@@ -1,0 +1,18 @@
+﻿			day02
+				2017/1/15
+Sun:视频学习
+心得：
+part1:andorid app
+
+*如下两者之间的区别？
+@+id -->新加的id
+@id -->引用android自带的id
+
+*驼峰命名法
+
+*Context?
+	Context就是给Android应用程序提供了一个可以实现各种操作的土壤环境，
+	Context为Android提供了各种资源、功能、服务。如果说编写一个Android程序像搭建一座房子，
+	那Context就为Android提供了土地，木材，和染料(启动一个Activity，弹出一个Dialog)，
+	并且能提供呼叫各种将房屋建得更完善的其他帮助(发送一个广播，启动一个服务等)。
+参考文档：http://www.jianshu.com/p/46c35c5079b4

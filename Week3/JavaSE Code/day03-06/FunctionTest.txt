@@ -1,0 +1,70 @@
+﻿class  FunctionTest
+{
+	public static void main(String[] args) 
+	{
+//		int x=add(3,5,8);
+//		System.out.println("x="+x);
+
+//		print99();
+		
+		printCFB(5);
+		
+	}
+
+	/*
+	函数重载特点：
+	1。在同一个类中
+	2。可以拥有一个以上的相同的函数名
+	3。参数的个数或参数类型不同
+	4。函数重载和返回值得类型无关
+	5。Java是强类型语言（严谨性），如果调用的函数名不确定，会编译失败。
+	*/
+
+	/*
+	需求：求两个整数的和
+	public static int add(int a,int b)
+	{
+		return a+b;
+	}
+	*/
+
+	/*
+	需求:求两个小数的和
+	public static double add(double a,double b)
+	{
+		return a+b;
+	}
+	*/
+
+	/*
+	需求：求三个整数的和
+	public static int add(int a,int b,int c)
+	{
+		return (a,b)+c;
+	}
+	*/
+
+
+	//代码的复用：函数的参数类型相同且参数个数不同时可以复用，参数类型不同不可以复用
+
+	//需求：打印九九乘法表
+	public static void printCFB(int num)
+	{
+		for(int x=1;x<=num;x++)
+		{
+			for(int y=1;y<=x;y++)
+			{
+				System.out.print(y+"*"+x+"="+y*x+"\t");
+			}
+			System.out.println();
+		}
+	}
+
+	
+	//需求：打印标准九九乘法表
+	public static void print99()
+	{
+		printCFB(9);
+	}
+	
+}

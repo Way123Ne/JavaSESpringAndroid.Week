@@ -1,0 +1,33 @@
+﻿		day02&03
+			2017/2/26-27
+Sun&Mon:视频学习
+part1:android app
+*GoogleMap(一) -->Project and AVD need to use Google APIs,not Android API
+	       -->add Google APIs to add ons folder[重点]
+1>如何安装Google APIs？
+  将Google APIs添加到adt\sdk\add ons文件夹下
+2>Google APIs 与 Android SDK 区别？
+  google APi提供了更多的工具类，比如地图应用的api，当然也包含android sdk，
+  如果你没用到地图api的东西，选android sdk就可以了，一般来说都选android  sdk
+
+[重点]参考文档：http://blog.csdn.net/lilxinglong/article/details/51701474
+
+3>获取Maps API Key(三)
+**申请Google Maps API Key:
+a)生成证书指纹：
+		C:Users\Wayne\.android>keytool -list -alias androiddebugkey -keystore debug.keystore
+    输入密匙密码:android
+    认证指纹(MD5/SHA1):.......
+b)打开网址，输入上面生成的指纹：
+  http://code.google.com/intl/en-US/android/maps-api-signup.html
+  https://developers.google.com/maps/documentation/android-api/signup
+
+  同意条款，并将认证指纹输入，后生成android地图API密匙
+
+c)app所用的key->.android\keystore == Google Map API Key -->[重点]
+
+part2:Eclipse
+**eclipse
+将一段代码抽取为方法Refactor->Extract Method 
+
+

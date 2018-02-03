@@ -1,0 +1,33 @@
+﻿class Fu
+{
+	Fu()
+	{
+	}
+	
+	void show()
+	{
+		System.out.println("hehe");
+	}
+}
+
+class Zi extends Fu
+{
+	int num=9;
+	Zi()
+	{
+		//显示初始化
+		System.out.println("zi constructor ..."+num);
+	}
+	void show()
+	{
+		System.out.println("show .."+num);
+	}
+}
+
+class Test
+{
+	public static void main(String[] args)
+	{
+		new Zi();
+	}
+}

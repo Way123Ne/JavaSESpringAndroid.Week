@@ -1,0 +1,18 @@
+﻿			day2
+				2016/11/13
+Sun:视频学习
+
+part1:Android app
+心得：
+*Activity生命周期onStop与onPause
+①当第二个Activity遮挡住第一个Activity时会调用onStop方法
+②对话框风格的Activity出现并未完全遮挡住前一个Activity会调用onPause
+*前部分代码显示报错可能因为下面代码没有完善，有时前后是一体的
+part2:Java SE
+心得：
+*二维数组
+①二维数组中有3个一维数组
+②每个一维数组中有2个元素
+③每个一维数组都是初始化值null	( NullPointerException)
+*方法名
+一般第一个字母为小写，第二个开始为大写

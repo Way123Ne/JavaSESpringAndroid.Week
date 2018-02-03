@@ -1,0 +1,18 @@
+﻿			day3
+				2016/11/7
+Mon:视频学习
+
+part1:Android app
+*Android 应用程序目录结构
+*AndroidMainfest.xml文件的作用
+①整个应用程序的配置文件
+*Android相关资源文件的作用
+**values-strings.xml(键值对)
+①用于存放应用程序所需要的值
+
+part2:Java SE
+*数组操作的最基本动作（存和取）
+*数组的核心思想（角标）
+*数组的长度属性（arr.length)
+*数组的常见操作—获取最值
+①需求-思路-步骤-两个明确

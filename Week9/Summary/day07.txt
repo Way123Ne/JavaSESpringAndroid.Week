@@ -1,0 +1,12 @@
+﻿			day07
+				2016/12/16
+Fri:视频学习
+
+part1:android app
+*MP3项目需求分析
+
+part2:Java SE
+*包
+1〉包-导入 import   2>Jar包
+*线程
+1>概述   2>好处与弊端

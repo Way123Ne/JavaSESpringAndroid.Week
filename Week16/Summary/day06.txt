@@ -1,0 +1,27 @@
+﻿		day06
+			2017/2/2
+Thu:视频学习
+
+part1:android app
+*Animation的使用(一)上
+1〉什么是Animation?
+2>Animations的分类
+第一类):Tweened Animations
+	该类Animations提供了旋转，移动，伸展和淡出等效果
+第二类):Frame-by-Frame Animations
+	这一类Animations可以创建一个Drawable序列，这些
+	Drawable可以按照指定的时间间隔一个一个的显示。
+3〉使用Tweened Animations的步骤
+a)创建一个AnimationSet对象   b)根据需要创建相应的Animation对象
+c)根据软件动画的需求，为Animation对象设置相应的数据
+d)将Animation对象添加到AnimationSet对象中
+e)使用控件对象开始执行AnimationSet
+4〉Animations的两种使用方法
+第一种)：代码中对动画效果进行设置
+第二种)：在XML文件中对动画效果进行设置---〉未学
+
+part2:Java SE
+*常用对象API
+1>集合框架-ListIterator接口
+2〉集合框架-List常用子类的特点
+3〉集合框架-数组和链表							201

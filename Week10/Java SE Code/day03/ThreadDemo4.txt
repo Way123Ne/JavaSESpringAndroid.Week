@@ -1,0 +1,40 @@
+﻿/*
+
+线程：
+
+可以通过Thread的getName获取线程的名称Thread-编号(从0开始)
+
+主线程的名字就是main
+*/
+
+class Demo extends Thread
+{
+	private String name;
+	Demo(String name)
+	{	
+		  super(name);
+		//this.name = name;
+	}
+	public void run()
+	{
+		for(int x=0; x<10; x++)
+		{
+			System.out.println(name+"...x="+x+"...name="+Thread.currentThread().getName());
+		}
+	}
+}
+
+class ThreadDemo4
+{
+	public static void main(String[] args)
+	{
+		//Thread t1 = new Thread();
+		
+		Demo d1 = new Demo("旺财");
+		Demo d2 = new Demo("xiaoqiang");
+		d1.start(); //开启线程，调用run方法
+
+		d2.start();
+		System.out.println("over..."+Thread.currentThread().getName());
+	}
+}

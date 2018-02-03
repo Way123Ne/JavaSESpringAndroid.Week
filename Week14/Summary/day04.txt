@@ -1,0 +1,18 @@
+﻿			day04
+				2017/1/17
+Tue:视频学习
+part1:android app
+*appwidget(一)
+**创建第一个App Widget的步骤
+1>定义AppWidgetProviderInfo:
+	在res/xml文件夹中定义一个名为example_appwidget_info.xml文件
+2>为App Widget指定样式和布局：
+	定义一个新的布局文件example_appwidget.xml
+	在本例中只是简单的定义一个TextView
+3>实现AppWidgetProvider
+a)onUpdate  b)onDeleted  c)onDisabled  d)onEnabled  e)onReveice
+
+part2:Java SE
+*常用对象API
+1>基本数据类型对象包装类—字符串转成基本数值
+2>基本数据类型对象包装类—进制转换

@@ -1,0 +1,70 @@
+﻿/*
+匿名对象：没有名字的对象
+new Car();//匿名对象，其实就是定义对象的简写格式
+
+	Car c=new Car();
+	c.run();
+
+	new Car().run();
+
+什么时候使用匿名对象？
+1.当对象对方法仅进行一次调用的时候，就可以简化成匿名对象
+	new Car().num=5;
+	new Car().color="green";
+	new Car().run();
+
+2.匿名对象可以作为实际参数进行传递
+	Car c1=new Car();
+	show(c1);
+	show(new Car());
+*/
+
+class CarDemo2
+{
+	public static void main(String[] args)
+{
+		/*
+		在计算机中创建一个car 的实例。通过new 来完成
+	Car c=new Car();  //c就是一个类类型的引用变量，指向了该类的引用对象（重要：数组类型的引用变量）
+	c.num=4;
+	c.color="blue";
+
+	c.run(); 要使用对象中的内容，可以通过对象成员的形式来调用
+	*/
+
+//	Car c1=new Car();
+//	c1.num=4;
+//	c1.color="red";
+
+//	Car c2=new Car();
+//	c2.num=4;
+//	c2.color="red";
+
+	Car c1=new Car();
+	Car c2=new Car();
+	show(c1);
+	show(c2);
+}
+
+
+	public static void show(Car c)
+	{
+		c.num=5;
+		c.color="black";
+		System.out.println(c.num+"...."+c.color);
+	}
+
+}
+
+class Car
+{
+	int num;  // int num=4  显示初始化
+	String color;
+
+	void run()
+	{
+		//int num=8;//成员变量和局部变量同名
+		System.out.println(num+"..."+color);
+	}
+}
+

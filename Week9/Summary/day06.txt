@@ -1,0 +1,11 @@
+﻿			day06
+				2016/12/15
+Thu:视频学习
+
+part1:android app
+*Android开发创建项目的Minimum SDK、Target SDK、Compile SDK作用
+*初步了解AVD 中API
+
+part2:Java SE
+*包
+1〉概述  2〉包之间的访问

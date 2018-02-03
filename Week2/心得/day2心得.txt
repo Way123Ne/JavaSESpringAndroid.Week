@@ -1,0 +1,25 @@
+﻿			day2
+				2016/10/23
+Sun:视频学习
+
+part1:Android
+心得：
+步骤：
+①main_activity.xml 文件中设置好控件
+②ActivityMain.java文件中将控件通过private声明出来
+  之后导入包ctrl+shift+o
+③通过findViewById方法将上一步骤中的id 找出来
+④定义一个监听器的类,倒入包，添加该类的方法
+⑤生成该监听器的类
+
+
+part2:Java SE
+心得：
+*Java语言属于强类型语言，因此两个整数运算结果还是整数（见Java源代码）
+*a++&++a的区别： int a=2;
+ 		 //b=a++;//a的值先赋给b然后a的值再加1
+    		//b=++a;//a的值先加1然后再把a的值赋给b
+*+的特殊作用：连接符(见Java源代码）
+
+
+

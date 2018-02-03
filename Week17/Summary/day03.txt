@@ -1,0 +1,19 @@
+﻿			day03
+				2017/2/6
+Mon:视频学习
+
+part1:android app
+*Animations的使用(三)
+1>什么是AnimationSet?
+a)AnimationSet是Animation的子类
+b)一个AnimationSet包含了一系列的Animation
+c)针对AnimationSet设置了一些Animation的常见属性（duration,startOffset...）
+2〉Interpolator的使用方法
+Interpolator定义了动画变化的速率，
+在Animations框架中定义了几种Interpolator
+3〉Frame-By-Frame Animations的使用方法
+
+part2:Java SE
+*常用对象API
+1>集合框架-ArrayList集合存储自定义对象
+2>集合框架-HashSet集合

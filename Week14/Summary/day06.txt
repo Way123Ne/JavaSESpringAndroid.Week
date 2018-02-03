@@ -1,0 +1,16 @@
+﻿			day06
+				2017/1/19
+Thu:视频学习
+part1:android app
+*widget(二)
+1>什么是PendingIntent
+2>RemoteViews的作用
+a)RemoteViews对象表示了一系列的View对象
+b)RemoteViews所表示的对象运行在另外的进程中
+3〉在App Widget中使用控件
+
+part2:Java SE
+*常用对象API
+1>集合框架-概述
+2〉集合框架-体系&共性功能
+3〉集合框架-方法演示_1

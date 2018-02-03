@@ -1,0 +1,23 @@
+﻿			day6
+				2016/11/3
+Thu:视频学习
+
+part1:Android app
+*了解第二季课程体系
+ Intent、Http、HttpClient、HttpRequest、Message
+ Activity、Handler、Thread、Looper、权限
+*了解传统的课程设计模式
+ UI—网络—线程—存储—。。。完成
+*Mars设计的课程
+① UI(简单）—网络(简单）—线程(简单）—存储(简单）—。。。
+② UI(中级）—网络(中级）—线程(中级）—存储(中级）—。。。
+
+part2:Java SE
+*了解内存空间的划分
+*栈内存
+①存储?
+**都是局部变量
+②特点：
+**而且变量所属的作用域一旦结束，该变量自动释放。
+
+

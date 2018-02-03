@@ -1,0 +1,22 @@
+﻿			day 4
+				2016/10/18
+Tue:视频学习
+
+part1:Android app
+心得：
+①个人觉得 R.java、MainActivity.java、activity_main.xml三个文件
+彼此之间关系及作用 有些像 Html、Css、js文件之间的关系与作用
+
+part2: Java SE
+心得：
+Java关键字
+①Java 关键字都是小写的
+
+Java标识符
+①类名即Java中的标识符，且类名间不可有空格
+②类名首字母书写规范：大写（不建议小写）
+③类名尽量起的有意义，最好不要与Java 关键字重复（尽量提高代码可读性）
+
+
+
+

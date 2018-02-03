@@ -1,0 +1,46 @@
+﻿/*
+对于角标是正数且不存在，可以用角标越界表示
+对于角标为负数的情况，准备用负数角标异常类表示
+
+负数角标这种异常在java中并没有定义过
+那就按照java异常的创建思想，面向对象，将负数角标进行自定义描述。并封装成对象
+
+这种自定义的问题描述称为自定义异常
+
+注意：如果让一个类称为异常类-〉必须要继承异常体系，因为只有称为异常体系的子类才有资格具备可抛性
+      才可以被两个关键字所操作--〉throws throw
+*/
+class Demo
+{
+	public int method(int[] arr,int index)
+	{
+		if(arr==null)
+		throw new NullPointerException("数组的引用不能为空!");
+		
+		if(index>=arr.length)
+		{
+			throw new ArrayIndexOutOfBoundsException("数组的角标越界了，你是不是疯了？:"+index);
+		}
+
+		if(index<0)
+		{
+			throw new ArrayIndexOutOfBoundsException("数组的角标不能为负，你是真的疯了!:"+index);
+		}
+		return arr[index];
+
+		//System.out.println(arr[index]); throw new ArrayIndexOutOfBoundsException(index)
+		//System.out.println("haha");
+	}
+}
+class ExceptionDemo2
+{
+	public static void main(String[] args)
+	{	
+		int[] arr=new int[3];
+		
+		Demo d=new Demo();
+		int num=d.method(null,-30);
+		System.out.println("num="+num);
+		System.out.println("over");
+	}
+}

@@ -1,0 +1,21 @@
+﻿			day7
+				2016/11/11
+Fri：书本学习
+
+part2:Java SE
+心得:
+*建议刚开始学习时不要使用文字编辑器之外的工具，
+ IDE会隐藏一些细节，最好从命令列来学习，等到真
+ 正了解内部运作之后再靠工具来提高生产力。
+*Mac OS X上已经包含了JavaSDK。它是OS X内建的一部分
+*你的任务主要就是编写源代码，其余交给Java来完成。
+ 源代码经过javac 编译后生成的类文件内容与源代码不一样
+*Integer.parseInt() 强制类型转换，返回的是一个int的值。
+*类存于源文件里面
+ 方法存于类中（方法：一个函数或过程）
+ 语句(statement)存于方法中
+*规范：①--({)
+ ①   public static void main(String[] args){
+ ②   public static void main(String[] args)
+     {
+*每个应用程序只有一个main()函数（起点）

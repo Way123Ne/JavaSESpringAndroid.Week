@@ -1,0 +1,11 @@
+﻿			day03
+				2016/12/26
+Mon:视频学习
+
+part1:andorid app
+*Mp3项目代码编写_2_思路梳理
+1>[from server]得到用户[client]所要下载的mp3文件的名称
+
+part2:Java SE
+*多线程
+1〉同步函数  2〉验证同步函数

@@ -1,0 +1,27 @@
+﻿/*
+需求：练习一个hello world的小程序
+
+思路：
+①定义一个类，java程序定义在类中且都是以类的形式存在的，
+  类的形式最终以一个字节码文件体现出来
+②定义一个主函数从而让该类可以独立运行
+③为了将hello wrold 语句在控制台上显示出来，使用输出语句完成
+
+步骤：
+①用class 关键字定义一个类，并给该类起一个阅读性较高的类名
+②使用jvm认识的主函数：public static main(String[] args);
+③使用输出语句 System.out.println("hello world");
+/*
+
+
+
+class Demo  //定义一个类名为Demo的类
+{
+	//定义一个主函数，程序入口，保证程序独立运行
+	public static main(String[] args);
+	{
+		System.out.println("hello world");//输出语句，将
+		hello world打印到控制台上，ln使数据在结尾处换行
+		
+	}
+}

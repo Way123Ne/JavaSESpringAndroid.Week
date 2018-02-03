@@ -1,0 +1,33 @@
+﻿package wayne1.string.demo;
+
+public class StringConstructorDemo {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		stringConstructorDemo2();
+	}
+
+	public static void stringConstructorDemo2() {
+		// TODO Auto-generated method stub
+		char[] arr = {'v','a','p','q','v'};
+		String s = new String(arr,1,3);
+
+		System.out.println("s="+s);
+		
+	}
+	/*
+	public static void stringConstructorDemo() {
+		// TODO Auto-generated method stub
+		String s = new String();//等效于String s = ""; 不等效于String s = null;
+		
+		byte[] arr = {97,66,67,68};
+		
+		String s1 = new String(arr);
+		System.out.println("s1="+s1);
+	}
+	*/
+}

@@ -1,0 +1,14 @@
+﻿		day06
+			2017/3/30
+Thu:视频学习
+part1:Java SE
+*IO流
+1〉打印流-PrintWriter
+2〉序列流-SequenceInputStream
+3〉序列流-SequenceInputStream-枚举和迭代
+
+part2:android app
+*获取传感器数据
+1〉传感器事件概念
+2〉为应用程序注册传感器
+3〉获取传感器的值和精度

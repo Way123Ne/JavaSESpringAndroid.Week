@@ -1,0 +1,18 @@
+﻿			day3
+				21016/10/24
+Mon:视频学习
+
+part1:Android app
+*单选按钮(RadioButton)的基本概念
+*RadioGroup与RadioButton
+①XML文件：<RadioGroup/> 与 <RadioButton/>
+②代码：RadioGroup与RadioButtonf
+*OnClickListener与OnCheckedChangeListener监听器
+
+part2:Java SE
+*逻辑运算符
+①^:异或的运算规律 ②！：非运算的概念
+③&&:AND(短路）的运算规律 ④||:OR(短路）的运算规律
+*位运算符
+①|:或运算 ②^:异或运算 ③~：反码
+④<<:左移运算 ⑤>>:右移运算 ⑥>>>:无符号右移运算

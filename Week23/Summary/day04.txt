@@ -1,0 +1,11 @@
+﻿		day04
+			2017/3/21
+Tue:视频学习
+part1:android app
+*HTTP操作(二)
+1>Apache HTTP API介绍
+2>发送请求和接收响应的流程
+
+part2:Java SE
+*IO流
+1>转换流的编码解码

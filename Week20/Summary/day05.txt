@@ -1,0 +1,24 @@
+﻿		day05
+			2017/3/1
+Wed:视频学习
+
+part1:android app
+*GoogleMap(二)
+1>在地图上添加标记、步骤
+**步骤
+a)在MapView上创建一个单独的图层    b)创建标记对象
+c)将标记显示在指定图层的指定位置
+d)处理点击标记的事件
+2>Overlay的作用
+a)一个Overlay对象就代表了显示在MapView之上的图层
+b)在一个OverLay中可以包含多个地图标记
+3>ItemizedOverlay的作用
+a)ItemizedOverlay是Overlay的子类
+b)在该类中持有一个或者多个OverlayItem
+c)每一个OverlayItem代表了一个标记
+4>ItemizedOverlay的使用方法
+
+part2:Java SE
+*集合框架工具类
+1>常用对象API(集合框架-工具类-Collection-toArray方法)
+2>常用对象API(集合框架-JDK5.0特性-ForEach循环)

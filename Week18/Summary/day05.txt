@@ -1,0 +1,24 @@
+﻿			day05
+				2017/2/15
+Wed:视频学习
+part1:android app
+*用户定位（一）
+1〉User Location能做什么？
+a)获取用户的位置     b)追踪用户的移动
+2〉User Location的关键API
+a)Location Manager:用于管理android的用户定位服务
+b)Location Providers:提供多种定位方式供开发者选择
+**定位方式的分类：[manifest.xml文件中声明]
+1)GPS定位-精准：使用GPS卫星进行定位
+2)NETWORK定位-误差：使用信号接收塔和wifi介入点进行定位
+3>获取用户的当前位置
+a)在AndroidManifest.xml中声明相应的权限
+b)获取LocationManager对象   
+c)选择LocationProvider
+d)邦定LocationListener对象
+4>使用DDMS模拟定位
+
+part2:Java SE
+*泛型
+1〉常用对象API(集合框架-泛型-泛型接口)
+2〉常用对象API(集合框架-泛型-泛型限定(上限))

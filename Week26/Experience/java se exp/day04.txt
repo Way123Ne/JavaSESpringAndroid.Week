@@ -1,0 +1,9 @@
+﻿/*
+  eclipse最新版 
+  已经不支持java swing的jigloo464
+  可以采用旧版本eclipse
+eg:Eclipse 3.7, 22-06-2011, Indigo projects, 版本代号 Indigo
+
+  紧跟编程知识发展变化，不断充电学习
+  用发展变化的眼光去感受感知旧知识学习新知识
+*/

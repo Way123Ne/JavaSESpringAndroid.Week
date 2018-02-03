@@ -1,0 +1,30 @@
+﻿			day2
+				2016/11/6
+Sun:视频学习
+
+part1:Android app
+*如何在一个应用程序中定义多个Activity
+①定义一个类，继承Activity
+②在该类当中，导入并复写该Activity当中的onCreate方法
+③在AndroidMainfest.xml文件当中注册该Activity
+
+*AndroidMainfest.xml文件
+**application标签的子标签activity标签
+①android:name=包名+类名
+②android:label (标签名)
+***activity标签的子标签
+①intent filter
+②intent filter 的作用
+  该标签放在哪个activity标签中哪个activity就作为默认程序被启动
+
+
+part2:Java SE
+*内存图解（初步了解栈与堆的运算模式）
+*数组常见问题1
+①ArrayIndexOfBoundsException
+②NonePointerException
+③[I@c17164 （I:int)
+*数组的第二种格式：
+①需要一个容器，但不明确容器具体的数据
+②需要一个容器，存储已知的具体数据
+

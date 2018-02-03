@@ -1,0 +1,10 @@
+﻿			day02
+				2017/1/8
+Sun:视频学习
+part1:搭建虚拟机跑linux
+*VMware下运行fedora19
+
+part2:Java SE 
+*常用对象API
+1〉String类-常见功能-获取_1
+2〉String类-常见功能-获取_2

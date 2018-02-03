@@ -1,0 +1,18 @@
+﻿			day01
+				2017/2/4
+Sat:视频学习
+part1:andorid app
+*Animations的使用(二)
+1〉Animations的第二种使用方法
+a)在res文件夹下面新建一个名为anim的文件夹
+b)创建xml文件，并首先加入set标签，改标签如下
+c)在该标签当中加入rotate,alpha,scale或者translate标签
+d)在代码中使用AnimationUtils中装载xml文件，并生成Animation对象
+2〉android:pivotX的值共有三种设置方法：
+a)android:pivotX="50" 这种方法使用绝对位置定位
+b)android:pivotX="50%" 这种方法相对于控件本身定位
+c)android:pivotX="50%p" 这种方法相对于控件的父控件定位
+
+part2:Java SE
+*常用对象API
+1>集合框架-LinkedList集合-练习（堆栈和队列）

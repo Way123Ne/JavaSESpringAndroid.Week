@@ -1,0 +1,18 @@
+﻿			day7
+				2016/10/28
+Fri:视频学习
+
+part1:Android app
+心得：
+*LinearLayout&RelativeLayout简单对比
+①LinearLayout弊端：UI性能较差，需反复解析嵌套的数据，且比较消耗资源）
+②RelativeLayout与之相反
+*mainactivity.xml&MainActivity.java简单对比
+①mainActivity.xml一般在仅仅实现简单的布局时使用
+②MainActivity.java常用于实现布局文件中要实现的功能
+
+
+part2:Java SE
+重点：
+*掌握累加思想
+*对while循环结构多加练习

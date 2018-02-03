@@ -1,0 +1,21 @@
+﻿			day03
+				2016/12/12
+Mon:视频学习
+part1:android app
+心得：
+*子类直接继承其父类[由android系统提供的父类-父类本身携带功能]
+（子类同时也可以实现其父类的功能）
+*Override复写:（java基础<——〉android app)
+ 子类继承父类,子类复写父类中的方法，子类中的方法才能实现
+*service :一个应用程序中最少有一个进程，而一个进程中至少有一个线程
+*mainfest
+1〉<uses-permission>tag 一般放在<mainfes>中的第二层嵌套
+2〉其他package下的自定义的java文件一般放在<mainfest>中的<application>标签即第三层嵌套
+*sdk adt android api 之间的关系[重点]
+
+part2:Java SE
+java se:
+*异常捕获和声明抛出的区别：
+ 捕获：问题可以解决
+ 抛出：问题解决不了
+

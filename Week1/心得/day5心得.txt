@@ -1,0 +1,17 @@
+﻿			day5
+				2016-10-19
+								
+Wed：视频学习
+
+part1:Android app
+难点：①view 的子类可以向上转型成View的类型
+      ②复写类里面的抽象方法
+心得：①在MainActivity.java 中可以做到的也可以
+        在activitymain.xml中做到（反之同样成立）
+      ②ctrl+shift+o 自动导入
+part2:Java SE
+心得：①单行注释中可以嵌入单行/多行注释
+      ②多行注释中可以嵌入单行注释，不可嵌入多行注释
+      ③bak文件即备份文件
+      
+      

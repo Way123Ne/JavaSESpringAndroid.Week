@@ -1,0 +1,20 @@
+﻿			day1
+				2016/10/29
+Sat:视频学习
+
+part1:Android app
+*了解什么是基准线
+*对齐至控件的基准线
+*与父控件的四个边缘对齐的四个属性
+①layout_alignParentLeft ②layout_alignParentRight
+③layout_alignParentTop  ④layout_alignParentBottom
+*对齐至父控件的中央的三个属性
+①layout_centerInParent ②layout_centerHorizontal ③layout_centerVertical
+
+
+part2:Java SE
+*for循环结构
+①格式 ②特殊格式（见Fordemo）③for循环结构的小练习(累加思想；见ForTest)
+④for?循环结构的嵌套  ⑤for循环结构的嵌套小练习（见ForForDemo和ForForTest)
+*for和while语句的特点
+*无限循环的最简单表现形式(for和while语句)

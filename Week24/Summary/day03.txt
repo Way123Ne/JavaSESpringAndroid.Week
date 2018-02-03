@@ -1,0 +1,14 @@
+﻿		day03
+			2017/3/27
+Mon:视频学习
+part1:Java SE
+*IO留
+1>Properties集合的-基本功能
+2>Properties集合的-list方法
+3>Properties集合的-store方法
+
+part2:android app
+*传感器初步(一)
+1〉传感器的分类
+2〉android设备传感器的特点
+3〉获取手机当中所有传感器的名称

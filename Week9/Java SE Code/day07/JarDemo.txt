@@ -1,0 +1,35 @@
+﻿package pack;
+
+/*
+Jar:java的压缩包
+
+*/
+
+class JarDemo
+{
+	public static void main(String[] args)
+	{
+		System.out.println("Hello Jar!");
+	}	
+}
+
+//./pack
+//.haha.jar/pack
+
+-------------------------------------------------
+
+//重点：jdk--->jar.exe--->jar -c
+
+//重点:set classpath = 
+
+//jar包好处：写好的工具文档直接放入jar包中----〉set classpath---->直接运行java.工具文档名称
+
+
+
+
+
+
+
+
+
+

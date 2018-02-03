@@ -1,0 +1,23 @@
+﻿		day02
+			2017/3/5
+Sun:视频学习
+part1:android app
+*腾讯微博项目介绍
+1>腾讯微博开发平台介绍
+a)注册开发者帐号->http://wiki.open.qq.com
+2>腾讯微博项目客户端目标
+a)学习基于开放平台的应用程序开发思路
+b)基于Android平台实现微博客户端的基本功能
+3>腾讯微博客户端开发计划
+a)申请开发资质    b)学习API文档
+c)学习Oauth认证机制
+d)编写设计文档    e)代码编写
+
+part2:Java SE
+*IO流
+1>IO流(字符流-FileWriter-IO异常处理)
+2>IO流(字符流-FileReader-读取方式一)
+3>IO流(字符流-FileReader-读取方式二)
+
+part3:Java Spring
+*第2讲.快速入门案例(一).ioc是什么.di是什么

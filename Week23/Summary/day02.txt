@@ -1,0 +1,13 @@
+﻿ 		day02
+			2017/3/19
+Sun:视频学习
+part1:Java SE
+*IO流
+1>转换流
+2>转换流-需求演示
+
+part2:android app
+*HTTP操作(一)
+1>什么是HTTP协议？
+2>HTTP工作原理
+3>HTTP运行流程

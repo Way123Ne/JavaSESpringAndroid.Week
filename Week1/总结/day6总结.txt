@@ -1,0 +1,23 @@
+﻿			day6
+				2016/10/20
+Thu:视频学习
+
+part1: Android app
+*控件布局基本概念
+*完成控件布局的方式
+①使用布局文件完成控件布局
+②在Java代码中完成控件布局
+*控件布局方法
+①Linear Layout；Relative Layout
+②ListView；Grid
+*各类布局的特点
+*线性布局基本使用方法
+①Vertical ②Horizontal
+
+part2: Java SE
+*Java中注释的重要性
+*常量的概念
+*Java中常量的分类
+*整数的四种表现形式：
+①二进制②八进制③十进制④十六进制
+

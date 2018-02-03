@@ -1,0 +1,27 @@
+﻿			day5
+				2016/10/26
+Wed:视频学习
+
+part1:Android app
+心得：
+*match_parent&fill_parent简介
+①fill_parent:设置一个构件的布局为fill_parent将强制性地使
+  构件扩展，以填充布局单元内尽可能多的空间.设置一个顶部布局
+  或控件为fill_parent将强制性让它布满整个屏幕。
+②match_parent:Android2.2中match_parent和fill_parent是一个
+  意思 .两个参数意思一样，match_parent更贴切，于是从2.2开始
+  两个词都可以用。那么如果考虑低版本的使用情况你就需要用fill_parent
+*计算机编程里的一个最简单的原则：就近原则
+
+重点：
+*layout_weight 用于分配父控件的空闲空间
+
+part2:Java SE
+心得：
+*if判断语句的三种格式
+①三元运算符就是ifelse语句的简写格式（存在弊端）
+②ifelse简写格式什么时候用？
+**当ifelse运算后，如果有一个具体的结果时，可以简化成三元运算符
+*局部代码块作用
+①局部代码块可以将变量封装在该局部代码块中 并 定义局部变量的生命周期
+②优化并减少对内存的占用。

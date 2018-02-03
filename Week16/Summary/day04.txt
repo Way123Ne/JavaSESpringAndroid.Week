@@ -1,0 +1,12 @@
+			day04
+				2017/1/31
+Tue:视频学习
+part1:android app
+*Mp3项目代码编写_2
+2〉访问网络下载MP3文件
+	a)需要创建一个Service
+	
+
+part2:Java SE
+*常用对象API
+1>集合框架-迭代器的原理

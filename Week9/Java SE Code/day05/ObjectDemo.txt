@@ -1,0 +1,58 @@
+﻿/*
+
+Object:所有类的根类
+
+Object是不断抽取而来的，具备这所有对象都具备的共性内容
+*/
+
+/*
+class Fu //extends Object
+{
+	Fu()
+	{
+		super();
+	}
+}
+class Zi extends Fu
+{
+	Zi()
+	{
+		super();
+	}
+}
+
+class 
+{
+	public static void main(String[] args)
+	{
+		new Zi();
+	}
+}
+*/
+
+class Person extends Object
+{
+	private int age;
+	Person(int age)
+	{
+		this.age = age;
+	}
+}
+
+class Demo
+{
+}
+
+class ObjectDemo
+{
+	public static void main(String[] args)
+	{
+		Person p1 = new Person(20);
+		Person p2 = new Person(20);
+	// Person p3 = p1;
+		Demo d = new Demo();
+
+		System.out.println(p1==p2);
+		System.out.println(p1.equals(d));
+	}
+}

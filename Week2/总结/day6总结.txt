@@ -1,0 +1,31 @@
+﻿			day6
+				2016/10/27
+Thu:视频学习
+
+part1:Android app
+*在xml文件独立完成一个猜拳游戏的界面布局xml文件
+①<LinearLayout></LinearLayout>
+②<TextView> />
+③<ImageView> />
+④<RadioGroup></RadioGroup> ；<RadioButton> />
+⑤<Button> />
+
+part2:Java SE
+*if语句小练习
+①用户需求：根据用户指定的具体数据，判断该数据对应的星期。
+②用户需求：根据用户输入的月份，给出对应的季节。
+*switch语句基本格式
+*switch语句小练习
+①用户需求：用户输入的数据对应出的星期
+②用户需求：用户输入的数据对应出的季节
+*if和switch语句的应用场合：
+①if:
+   1>对具体的值进行判断。
+   2>对区间判断。	
+   3>对运算结果是boolean类型的表达式进行判断.
+
+②switch:
+   1>对集体的值进行判断
+   2>值的个数通常是固定的
+     对于几个固定的值判断，建议使用switch语句，因为switch语句
+     会将具体的答案都加载进内存。效率相对高一点。

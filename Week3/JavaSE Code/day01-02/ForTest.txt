@@ -1,0 +1,57 @@
+﻿class ForTest
+{
+	public static void main(String[] args)
+	{
+
+		/*
+			for和while的特点：
+			1.for和while可以互相转换。
+			2.格式上的不同,在使用上有点小区别
+				如果需要通过变量来对循环进行控制，
+			该变量只作为循环增量存在时，区别就体现出来了。
+		*/
+
+		/*
+		分别用while和for语句，打印1~4这4个数
+		*/
+
+		int x=1;
+		while(x<5)
+		{
+			System.out.println("x="+x);
+			x++;
+	     }
+		System.out.println("x===="+x);
+
+		
+		 for(int y=1;y<5;y++)
+		{
+			System.out.println("y="+y);
+	     }
+			/*
+			 System.out.println("y===="+y); 
+		    变量y的作用域仅局限于for语句中，故此输出语句无法找到y.
+			*/
+
+				/*
+				无限循环最简单形式
+				while(true){}
+
+				for(;;){}
+				*/
+
+				/*
+				什么时候使用循环结构？
+				当对代码执行很多次时，使用循环结构完成
+
+				什么时候使用if和while语句？
+				1.当对一个条件进行一次判断时，可以使用if语句
+				2.当对一个条件进行多次判断时，可以使用while语句
+
+				注意：
+				1.在使用循化时，一定要明确哪些语句需要参与循环
+				2.循化通常情况下，需要定义条件，需要控制次数
+				*/
+		 
+		 }
+}

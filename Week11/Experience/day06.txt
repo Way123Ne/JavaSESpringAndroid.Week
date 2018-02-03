@@ -1,0 +1,56 @@
+﻿			day06
+				2016/12/29
+Thu:视频学习
+心得：
+part1:android app
+*Log知识简单总结
+1〉产生log文件的情况：
+a)uncaused exception  b)Force Closed(FC)
+c)Application No Response(ANR)-->一般主线程超过5秒钟没有处理就会产生ANR
+d)手动生成
+2〉一个日志文件要分成多段来看，包含十几个小单元
+  事实上他主要由三大块儿组成 。
+a)系统基本信息 ，包括 内存，CPU ，进程队列 ，虚拟内存 ， 垃圾回收等信息 。
+     
+
+------ MEMORY INFO (/proc/meminfo) ------
+b)事件信息 ， 也是我们主要分析的信息 。
+------ EVENT INFO (/proc/vmallocinfo) ------
+c)虚拟机信息 ， 包括进程的，线程的跟踪信息，这是用来跟踪进程和线程具体点的好地方 。 
+------ VM TRACES JUST NOW (/data/anr/traces.txt.bugreport: 2011-01-15 16:49:02) ------
+
+3>总结:观察log文件的基本步骤 
+a)如果是ANR问题 ， 则搜索“ANR”关键词 。 快速定位到关键事件信息 。
+
+b)如果是ForceClosed 和其它异常退出信息，则搜索"Fatal" 关键词， 快速定位到关键事件信息 。
+
+c)定位到关键事件信息后 ， 如果信息不够明确的，再去搜索应用程序包的虚拟机信息 ，
+  查看具体的进程和线程跟踪的日志，来定位到代码 。
+
+注意：打开log文件 ， 由于是ANR错误，因此搜索"ANR " ， 为何要加空格呢，你加上和去掉比较一下就知道了 。
+      可以屏蔽掉不少保存到anr.log文件的无效信息 。 
+
+4〉常见报错举例：
+a) 01-15 16:49:02.433 E/ActivityManager( 2466): ANR in com.android.mms (com.android.mms/.ui.SlideshowActivity)
+   翻译：在16:49分2秒433毫秒的时候 ActivityManager （进程号为2466) 发生了如下错误：com.android.mms包下面的.ui.SlideshowActivity 无响应 。
+
+b) 01-15 16:49:02.433 E/ActivityManager( 2466): Reason: keyDispatchingTimedOut
+   翻译：原因 ， keyDispatchingTimeOut - 按键分配超时 
+
+c) 01-15 16:49:02.433 E/ActivityManager( 2466): Load: 0.6 / 0.61 / 0.42
+   翻译：5分钟，10分钟，15分钟内的平均负载分别为：0.6 , 0.61 , 0.42
+
+5>log中简写单词识别：
+a)UID(user id)、TID(Thread id)、PID(Process id)
+b)Dalvik-->android 虚拟机
+c)Cache-->缓存SARM --〉SARM静态内存
+
+参考文档：http://blog.csdn.net/jincf2011/article/details/6334842
+
+*Git-flow工作流
+参考文档：http://blog.leanote.com/post/darker/Git-Flow
+  	  
+http://blog.jobbole.com/76867/
+
+*Git学习教程
+参考文档http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/		

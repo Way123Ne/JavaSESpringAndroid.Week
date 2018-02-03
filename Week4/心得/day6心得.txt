@@ -1,0 +1,49 @@
+﻿			day6
+				2016/11/10
+Thu:视频学习
+
+part1:Android app
+心得：
+*完成一个小功能测试一下，接着再做其他。。。。
+
+*Menu:OnCreateOptionsMenu&OnPrepareOptionsMenu区别？？
+**OnPrepareOptionsMenu：
+①在onPrepareOptionsMenu(Menumenu)函数中，首先需要调用：
+
+
+  [java] view plain copy
+super.onPrepareOptionsMenu(menu);??
+menu.clear();?
+
+
+②如果没有clear而直接add的话，那么菜单中菜单项是会“追加”的，
+  这样随着你不停的点menu键，菜单项就不停的增加。
+
+③另外，android系统默认的菜单样式是支持最多3个一行，
+  如果有4项就每行2个有2行...如果想自定义样式，可以使用xml文件定义样式。
+**OnCreateOptionsMenu:(只会在第一次初始化菜单时调用)
+①此方法用于初始化菜单，其中menu参数就是即将要显示的Menu实例。
+  返回true则显示该menu,false 则不显示;
+②该菜单在点击 menu 按键 后会在对应的Activity底部显示出来。
+
+*logcat 不输出信息--重新启动ADT和android virtual device
+
+*logcat -add a new logcat filter(~name;~log tag;~log message(填写代码中打印出的关键字））
+
+*log.i ; log.v;log.d;log.e;log.a;log.w
+
+*Menu: onCreateOptionsMenu&onPrepareOptionsMenu;onContextMenu;onSubMenu
+
+*注意：别忘将监听器邦定在类上
+
+part2:Java SE
+心得：
+*折半查找法
+①开发中(import.java.util*;)
+②面试中(了解原理[-min-1]）	            
+*Java 中的位运算符
+①>>:带符号右移
+②>>>:无符号右移
+
+
+

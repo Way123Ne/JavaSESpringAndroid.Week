@@ -1,0 +1,28 @@
+﻿			day03
+				2016/12/5
+Mon:视频学习
+
+part1:Andorid app
+*什么是WIFI?
+*获取WIFI网卡的状态（整型常量）
+①WIFI_STATE_DISABLED:WIFI网卡不可用
+②WIFI_STATE_DISABLING:WIFI正在关闭
+③WIFI_STATE_ENABLED：WIFI网卡可用
+④WIFI_STATE_ENABLING:WIFI网卡正在打开
+⑤WIFI_STATE_UNKNOWN:未知网卡状态
+*操作WIFI所需要的权限
+①CHANGE NETWORK STATE ②CHANGE WIFI STATE 
+③ACCESS NETWORK STATE ④ACCESS WIFI STATE
+*改变WIFI网卡的状态
+**->通过WifiManager object实现
+WifiManager wifiManager=(WifiManager)Context.getSystemService(Service.WIFI_SERVICE);
+常量字母全都大写单词之间用_连接
+①打开WIFI网卡->wifiManager.setWifiEnabled(true);
+②关闭WIFI网卡->wifiManager.setWifiEnabled(false);
+③获取网卡当前的状态->wifiManager.getWifiState();
+
+part2:Java SE
+*多态
+①成员函数 ②静态函数
+*内部类
+①概述 ②修饰符 ③注意细节

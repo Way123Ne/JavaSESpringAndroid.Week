@@ -1,0 +1,108 @@
+﻿/*
+对象的多态性
+
+class 动物
+{}
+
+class 猫 extends 动物
+{}
+
+class 狗 extends 动物
+{}
+
+
+猫 x=new 猫();
+动物 x=new 猫(); //一个对象，两种形态（左右各一种形态）
+
+猫这类食物既具备猫的形态，又具备动物的形态
+这就是对象的多态性
+
+简单说：就是一个对象对应着不同类型
+
+多态在代码中的体现:父类或者接口的引用指向其子类的对象
+
+多态的好处：
+           提高了代码的扩展性，(前期定义的代码可以使用后期的内容->前期的method(Animal a=new Pig()方法可以调用后期的Pig)。
+
+多态的弊端：前期定义的内容不能调用后期子类的特有内容
+
+多态的前提：
+1〉必须有关系，继承、实现
+2〉要有覆盖
+*/
+
+abstract class Animal
+{
+	abstract void eat();
+}
+
+class Dog extends Animal
+{
+	void eat()
+	{
+		System.out.println("啃骨头");
+	}
+	void lookHome()
+	{
+		System.out.println("看家");
+	}
+}
+
+class 	Cat extends Animal
+{
+	void eat()
+	{
+		System.out.println("吃鱼");
+	}
+	void catchMouse()
+	{
+		System.out.println("抓老鼠");
+	}
+}
+//后期来的新物种
+class Pig extends Animal
+{
+	void eat()
+	{
+		System.out.println("饲料");
+	}
+	void gongDi()
+	{
+		System.out.println("拱地");
+	}
+}
+
+class DuoTaiDemo
+{
+	public static void main(String[] args)
+	{
+		Cat c=new Cat();
+		//c.eat();
+		Dog d=new Dog();
+		//d.eat();
+	
+		method(c);
+		method(d);
+		method(new Pig());
+	}	
+	public static void method(Animal a) //Animal a=new Dog();
+{
+	a.eat();
+//	a.catchMouse();多态的弊端-〉前期定义的内容不能调用后期子类的特有内容
+}
+
+	/*
+	public static void method(Cat c)
+	{
+		c.eat();
+	}
+	public static void method(Dog d)
+	{
+		d.eat();
+	}
+	public static void method(Pig p)
+	{
+		p.eat();
+	}
+	*/
+}

@@ -1,0 +1,42 @@
+﻿			day7
+				2016/10/21
+Fri:视频学习
+
+part1:Android app
+*距离单位 px
+①像素的概念:dpi（dots per inch）
+②计算公式:长的平方与宽的平方和的算术平方根÷Size 
+*距离单位 dp
+①dp概念：dp=dip(Device Independent pixels)
+②换算公式：px=dp*(dpi/160)
+③在dpi为160的屏幕上 1dp=1px
+*距离单位 sp
+①sp 概念：scaled pixels
+②sp 单位作用：通常用于指定字体的大小
+*控件的外边距与内边距
+①外边距：margin(top;right;bottom;left)
+②内边距：padding(top;right;bottom;left)
+
+part2:Java SE
+*不同进制间的相互转换
+①二进制与十进制之间的转换
+②二进制与八进制之间的转换
+③二进制与十六进制之间的转换
+④十进制与八进制与十六进制之间的转换
+⑤十六进制与八进制之间的转换
+*负数的二进制表现形式
+*变量
+①变量的概念
+②定义变量的作用
+③使用变量的注意事项
+④定义变量的格式
+*数据的类型
+（一）基本数据类型：
+①数值型:整数类型（byte,short,int,long);浮点类型（folat,double)
+②字符型(char)
+③布尔型(boolean)
+（二）引用数据类型
+①类（class)
+②接口(Interface)
+③数组([])
+

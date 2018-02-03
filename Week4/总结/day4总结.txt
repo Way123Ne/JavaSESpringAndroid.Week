@@ -1,0 +1,25 @@
+﻿			day4
+				2016/11/8
+Tue：视频学习
+
+part1:Andorid app
+*启动一个Activity的方法
+①生成一个意图对象(Intent)
+②调用setClass方法设置所要启动的Activity
+③调用startActivity方法启动Activity
+*初步了解back stack
+①android system只显示stack(栈)顶端的activity操作对象
+
+*创建Activity的要点
+①一个Activity就是一个类，并且这个类要继承Activity
+②需要复写onCreate方法
+③每一个Activity都需要在AndroidMainfest.xml文件中进行配置
+④为Activity添加必要的控件
+
+
+
+part2:Java SE
+*数组的排序（选择排序）
+
+
+

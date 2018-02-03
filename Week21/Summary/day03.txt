@@ -1,0 +1,10 @@
+﻿		day03
+			2017/3/6
+Mon:视频学习
+part1:Java SE
+*其他对象API
+1>System类
+2>Runtime类
+
+part2:Java Spring
+*第2讲.快速入门案例(二).ioc是什么.di是什么

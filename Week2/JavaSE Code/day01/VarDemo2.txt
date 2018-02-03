@@ -1,0 +1,41 @@
+﻿class VarDemo2
+{
+	public static void main(String[] args)
+	{
+		/*
+		重点：
+		int x=3;
+		byte b=5;
+		x=x+b;//自动类型转换
+
+		byte b=3;
+		b=(byte)(b+200); //强制类型转换
+		*/
+
+		//System.out.println('a'+1);//ASCII编码表
+		//System.out.println('你'+0);//Unicode编码表
+		
+		/*
+		面试题：
+		byte b=4;
+		//b=3+7;
+		byte b1=3;
+		byte b2=7;
+
+		b2=127;
+
+		b=b1+b2;
+
+		System.out.println(b);
+		*/
+
+		int x;
+		//int x1=10;
+		int x1=Integer.MAX_VALUE
+		int x2=98;
+		x=x1+x2;
+		
+		System.out.println(x);
+
+	}
+}

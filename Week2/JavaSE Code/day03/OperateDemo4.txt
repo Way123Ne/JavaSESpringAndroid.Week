@@ -1,0 +1,27 @@
+﻿class  OperateDemo4
+{
+	public static void main(String[] args) 
+	{
+		
+		//位运算符：& | ~
+		
+		//System.out.println(6&3);
+		//System.out.println(6|3);
+		//System.out.println(~6);
+		
+		/*
+		左移运算符：左移几位就是该数据乘以2的几次方。
+		<<:可以完成2的次幂运算
+		*/
+		//System.out.println(3<<2);//3左移两位
+
+		/*
+		右移运算符：右移几位就是该数据除以2的几次方。
+		>>:高位出现的空位，原来高位是什么就用什么补这个空位
+		*/
+		//System.out.println(6>>1);
+
+		//>>>:无符号右移：数据进行右移时，高位出现的空位，无论原高位是什么，空位都用0补
+		System.out.println(6>>>2);
+		}
+}

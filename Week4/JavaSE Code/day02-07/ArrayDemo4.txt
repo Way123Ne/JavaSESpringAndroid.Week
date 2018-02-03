@@ -1,0 +1,95 @@
+﻿class ArrayDemo4
+{
+	public static void main(String[] args)
+	{
+		
+		int[] arr={12,45,5,2,1,14,25};
+		
+		int min=getMin_2(arr);
+		System.out.println("min="+min);
+	}
+
+			/*
+			获取数组中的最大/小值
+			思路：
+			1.需要进行比较，并定义变量记录住每次比较后较大/小的值
+			2.对数组中的元素进行遍历取出，和变量中记录的元素进行比较
+				如果遍历到的元素大/小于变量中记录的元素，就用变量记录住该大/小的值
+			3.遍历结果，该变量记录就是最大/小值
+
+			定义一个函数来实现该功能：
+
+			两个明确：
+			1.有无结果？结果是什么？
+				 有，数组中的数据。int
+			2。未知内容
+					数组
+			*/
+
+		/*
+		public static int getMax(int[] arr)
+	{
+		//定义变量记录较大的值
+		int maxElement=arr[0];
+		for(int x=1;x<arr.length;x++)
+		
+			if(arr[x]>maxElement)
+			{
+				maxElement=arr[x];    
+			}
+			return maxElement;
+	}
+		*/
+		
+	
+	
+
+	/*
+	public static int getMax_2(int[] arr)
+	{
+		//定义变量记录较大的值
+		int maxIndex=0;
+		for(int x=1;x<arr.length;x++)
+		
+			if(arr[x]>arr[maxIndex])
+			{
+				maxIndex=x;
+			}
+			return maxIndex;
+	}
+	*/
+
+		/*
+		public static int getMin(int[] arr)
+	{
+		//定义变量记录较小的值
+		int minElement=arr[0];
+		for(int x=1;x<arr.length;x++)
+		
+			if(arr[x]<minElement)
+			{
+				minElement=arr[x];    
+			}
+			return minElement;
+	}
+		*/
+	
+	
+
+	
+	public static int getMin_2(int[] arr)
+	{
+		//定义变量记录较小的值
+		int minIndex=0;
+		for(int x=1;x<arr.length;x++)
+		
+			if(arr[x]<arr[minIndex])
+			{
+				minIndex=x;
+			}
+			return minIndex;
+	}
+	
+	
+}
+

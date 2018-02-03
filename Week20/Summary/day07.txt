@@ -1,0 +1,38 @@
+﻿			day07
+				2017/3/3
+Fri:视频学习
+part1:SQL、MySql、MySql Workbenck、JDBC
+1>MySql:
+	a)~安装配置[root: user password->set null 便于使用]
+	b)~与操作系统以及jdk版本一致
+	c)参考url:http://www.cnblogs.com/fnng/archive/2011/07/18/2110023.html
+	d)复制他人代码时注意与自身需求的差异化
+2>jdbc drive安装
+3>mysql workbench
+	a)~安装  
+	b)~ 与Mysql版本一致[warnning:some features may not support current mysql version]
+	c)参考url:https://sanwen8.cn/p/28d8Jtb.html
+4>SQL学习：w3c
+
+part2:Java Spring
+*搜索下载java spring学习视频->java spring-韩顺平 2011最新版 
+*简单创建一个spring项目
+1>将传统的方法通过spring实现
+2>将下列文件引入到spring项目中：	
+		a)commons-logging.jar     b)spring.jar
+3>在src文件夹[通常]下创建applicationContext.xml文件
+
+part3:Java SE
+*IO流
+1>IO流(输入流&输出流)
+a)IO流涌来处理设备间的数据传输
+b)Java对数据的操作是通过流的方式
+c)Java用于操作流的对象都在IO包中
+d)流按操作数据分为两种：字节流于字符流
+e)流按流向分为：输入流，输出流
+2>IO流(字节流&字符流)
+
+
+
+
+

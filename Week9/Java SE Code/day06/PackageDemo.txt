@@ -1,0 +1,112 @@
+﻿package mypack;
+
+class PackageDemo
+{
+	public static void main(String[] args)
+	{
+		packa.DemoA d = new packa.DemoA();
+		d.show();
+
+		packb.DemoB b = new packb.DemoB();
+		b.method();
+		System.out.println("Hello Package!");
+	}
+}
+
+/*
+E:\javafiles>javac -d c:\myclass PackageDemo.java
+PackageDemo.java:7: 错误: 程序包packa不存在
+                packa.DemoA d = new packa.DemoA();
+                     ^
+PackageDemo.java:7: 错误: 程序包packa不存在
+                packa.DemoA d = new packa.DemoA();
+                                         ^
+2 个错误
+PackageDemo.java:7: 错误: 找不到符号
+                DemoA d = new DemoA();
+                ^
+  符号:   类 DemoA
+  位置: 类 PackageDemo
+PackageDemo.java:7: 错误: 找不到符号
+                DemoA d = new DemoA();
+                              ^
+  符号:   类 DemoA
+  位置: 类 PackageDemo
+2 个错误
+
+原因：类名写错
+
+因为DemoA类已经有包的所属，所以必须要明确其包名。
+记住：DemoA这个名称是错的。正确的名称是包名.类名 ->packa.DemoA
+
+ ------------------------------------------------------------
+
+E:\javafiles>javac -d c:\myclass PackageDemo.java
+PackageDemo.java:7: 错误: 程序包packa不存在
+                packa.DemoA d = new packa.DemoA();
+                     ^
+PackageDemo.java:7: 错误: 程序包packa不存在
+                packa.DemoA d = new packa.DemoA();
+                                         ^
+2 个错误
+
+原因: 是在当前目录下没找到，因为packa存放在其他目录下
+        应该配置一个classpath
+
+
+-------------------------------------------------------------
+
+E:\javafiles>set classpath=c:\myclass
+
+E:\javafiles>javac -d c:\myclass PackageDemo.java
+PackageDemo.java:7: 错误: DemoA在packa中不是公共的; 无法从外部程序包中对其进行访
+问
+                packa.DemoA d = new packa.DemoA();
+                     ^
+PackageDemo.java:7: 错误: DemoA在packa中不是公共的; 无法从外部程序包中对其进行访
+问
+                packa.DemoA d = new packa.DemoA();
+                                         ^
+2 个错误
+
+原因：DemoA..java中的DemoA类未公有化
+		public DemoA
+
+总结：
+包与包之间的类进行访问，被访问的包中的类必须是public的，
+被访问的包中的类的方法也必须是public的
+
+--------------------------------------------------------------
+
+E:\javafiles>javac -d c:\myclass PackageDemo.java
+PackageDemo.java:8:错误:show()在DemoA中不是公共的；无法从外部程序包中对其进行
+访问
+	d.show();
+
+1个错误
+
+原因：DemoA.java中的DemoA类的void show()方法未公有化
+		public void show();
+
+总结：
+包与包之间的类进行访问，被访问的包中的类必须是public的，
+被访问的包中的类的方法也必须是public的
+
+
+--------------------------------------------------------------
+
+
+E:\javafiles>javac -d c:\myclass PackageDemo.java
+PackageDemo.java:11:错误：method<>可以在DemoB中访问protected
+	b.method();
+
+1个错误
+
+
+              public      protected     default    private
+同意类中     ok            ok               ok           ok
+同一包中     ok            ok               ok           
+子类中        ok            ok
+不同包中     ok 
+
+*/

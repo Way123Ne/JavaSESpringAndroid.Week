@@ -1,0 +1,11 @@
+﻿		day06
+			2017/4/6
+Thu:视频学习
+part1:java se
+*IO流
+1〉RandomAccessFile-写入
+2〉RandomAccessFile-读取&随机读取
+3〉RandomAccessFile-随机写入&细节
+4〉管道流-PipedStream
+5〉操作基本类型数据的流对象-DataStream
+6〉操作数组的流

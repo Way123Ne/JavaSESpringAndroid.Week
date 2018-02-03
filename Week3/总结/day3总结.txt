@@ -1,0 +1,18 @@
+﻿			day3
+				2016/10/31
+Mon:视频学习
+
+part1:Android app
+*TimePicker的使用方法
+① /**                 ②使用24小时制表示时间  
+ 
+  */ （注释的作用）   ③android 旧版本与新版本在模拟器中显示的差异
+*OnTimeChangedListener的使用方法
+*DatePicker的使用方法
+*AnalogClock的使用方法
+
+part2:Java SE
+*函数的定义
+*函数的格式
+*函数的特点
+*函数的2个注意事项（FunctionDemo2)

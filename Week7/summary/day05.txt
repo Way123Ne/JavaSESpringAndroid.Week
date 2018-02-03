@@ -1,0 +1,22 @@
+﻿			day05
+				2016/11/30
+Wed:视频学习
+
+part1:Android app
+*Content Provider基本概念
+①为存取和获取数据提供了统一的接口 ②使用Content Provider可以在不同的应用程序之间共享数据
+③android为常见的一些数据提供了Content Provider(图片、音频、视频等）
+*数据模型：Content Provider使表的形式来组织数据
+*URI
+①每一个ContentProvider都拥有一个公共的URI，这个URI用于表示这个ContentProvider所提供的数据
+②Android所提供的ContentProvider都存放在android.provider包中
+*ContentProvider所提供的函数
+①query():查询 ②insert():插入  ③update():更新
+④delete():删除 ⑤getType():得到数据类型 ⑥onCreate():创建时的回调函数
+*实现ContentProvider的过程
+①定义一个CONTENT_URL常量 ②定义一个类，继承ContentProvider
+③实现query,insert,update,delete,getType,onCreate方法  ④在AndroidMainfest.xml中进行声明
+
+part2:Java SE
+*抽象类
+①概述 ②特点 ③注意细节  ④练习：雇员事例

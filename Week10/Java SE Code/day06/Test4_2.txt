@@ -1,0 +1,190 @@
+﻿19.
+
+interface Test
+{
+	void func();
+}
+class Demo
+{
+	public static void main(String[] args)
+	{
+		//补足代码；(匿名内部类)
+		
+		new Demo().show(new Test() //主函数为静态的需要new Demo()从而调用非静态方法show()
+		{
+			public void func{}
+		});
+	}
+	void show(Test t)
+	{
+		t.func();
+	}
+}
+---------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------
+20.
+写出程序结果
+class Test
+{
+	public static String output="";
+	public static void foo(int i)
+	{
+		try
+		{
+			throw new Exception();
+			output+="1";
+		}
+		catch(Exception e)
+		{
+			output+="2";
+			return;
+		}
+		finally
+		{
+			output+="3";
+		}
+		output+="4";
+	}
+	public static void main(String[] args)
+	{
+		foo(0);
+		System.out.println(output);//134
+		foo(1);
+		System.out.println(output);//13423
+	}
+}
+// + 连接符
+// static 静态共享output
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+21.
+建立一个图形接口，声明一个面积函数，图形和矩形都实现这个接口，
+并得出两个图形的面积
+注：体现面向对象的特征，对数值进行判断，用异常处理，不合法的数值要出现
+    “这个数值是非法的”提示，不再进行运算
+----------------------------------------------------------------------------------------------------------------------------
+22.
+求矩形&圆面积
+
+interface Areable
+{
+	public double getArea();
+}
+
+class NoValueException extends RuntimeException
+{
+	NoValueException()
+	{
+		super();
+	}
+	
+	NoValueException(String message)
+	{
+		 super(message);
+	}
+}
+
+class Rec implements Areable
+{
+	private int length;
+	private int width;
+	Rec(int length,int width)
+	{
+		if(length<=0 || width<=0)
+		{
+		//	System.out.println(""数值非法);
+		//	return;
+			throw new NoValueException("数值非法");
+		}
+		this.length = length;
+		this.width = width;
+	}	
+	public double getArea()
+	{
+		return length*width;
+	}
+}
+
+class Circle implements Areable
+{
+	private int radius;
+	public static final double PI = 3.14;
+	Circle(int radius)
+	{
+		if(radius<=0)
+			throw new NoValueException("半径值非法");
+		this.radius = radius;
+	}
+	public double getArea()
+	{
+		return radius*radius*PI;
+	}
+}
+
+class Test22
+{
+	public static void main(String[] args)
+	{
+		Rec r = new Rec(-3,5);
+		
+		double a = r.getArea();
+		System.out.println("area:"+a);
+	}
+}
+
+----------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------
+23.
+写出程序步骤
+public class Demo
+{
+	private static int j = 0;
+	private static boolean methodB(int k)
+	{
+		j += k;
+		return true;
+	}
+	public static void methodA(int i)
+	{
+		boolean b;
+		b = i < 10 | methodB (4); //单或：左右真为真
+		b = i < 10 || methodB (8);//双或：一面真为真
+	}
+	public static void main(String[] args)
+	{
+		methodA (0);
+		System.out.println(j);
+	}
+}
+
+// 4
+------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
+24.
+加入我们在开发一个系统时需要对员工进行建模，员工
+包含3个属性：姓名、工号、工资。经理也是员工，除了含有员工的属性外
+另外还有一个奖金属性，请使用继承的思想设计出员工类和经理类。
+要求：类中提供必要的方法进行属性访问
+
+//已做
+--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+25.
+在一个类中编写一个方法，这个方法搜索一个字符数组中是否存在某个字符，如果
+存在，则返回这个字符在字符数组中第一次出现的位置（序号从0开始计算），否则，
+返回-1。要搜索的字符数组合字符都以参数形式传递给该方法，如果传入
+的数组为null，应该抛出illegalArgumentException异常，
+在类的main方法中以各种可能出现的情况测试验证编写方法是否正确，
+例如：字符不存在，字符存在，传入的数组为null等
+
+public int getIndex(getIndex(char[] arr,char key)
+{
+	if(arr==null)
+		throw new illegalArgumentException("没有数组实体");
+	for(int x = 0; x<arr.length; x++)
+	{
+		if(arr[x]==key)
+		return x;
+	}
+	return -1;
+}

@@ -1,0 +1,20 @@
+﻿			day 3
+				2016/10/17
+Mon:视频学习
+
+学习心得:
+part1:Android app
+难点：
+①通过Android SDK Manager自动载入并下载各个版本的SDK；
+  通过VPN登陆google官网载入并下载各个版本的SDK；
+  二者加载时间较长，且均添加失败
+  可能需要手工添加各个版本的SDK
+②AVD启动起来有时快有时慢，建议打开eclipse编写程序前提前打开AVD 
+
+part2: Java SE
+心得：
+①Java一般出现连锁错误，修改好第一个error,一般下面出现的错误就OK
+②保持良好的心态，经验来源于错误
+
+
+

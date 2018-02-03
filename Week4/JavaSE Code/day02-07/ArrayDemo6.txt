@@ -1,0 +1,26 @@
+﻿class  ArrayDemo6 
+{
+	public static void main(String[] args) 
+	{
+		int[] arr={14,54,48,75,12,30};
+
+		int index=getIndex(arr,75);
+		System.out.println("Index="+index);
+	}
+
+	/*
+	数组的常见操作-查找
+	*/
+
+	public static int getIndex(int[] arr,int key)
+	{
+		for(int x=0;x<arr.length;x++)
+		{
+			if(arr[x]==key)
+			
+				return x;
+			
+		}
+		return -1;
+	}
+}

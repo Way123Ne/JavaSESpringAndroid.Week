@@ -1,0 +1,25 @@
+﻿			day04
+				2016/12/20
+Tue&Wed:视频学习
+
+part1:android app
+心得：
+*Logcat报错
+1〉error opening trace file: No such file or directory错误
+解决方法--〉本身这个错误不影响运行,但是看着烦啊.解决方案几种如下:
+
+1.xml标签不完整或者未关闭,常有的事.Eclipse并不是所有的xml标记都检查,单双标记什么的.
+
+2.有人说,据说是 android api 的版本和模拟器的版本不一致导致的 .你如果出现了,可以试试.
+
+3.版本和写权限问题,改改AndroidMenifest.xml文件
+
+删除<uses-sdk android:minSdkVersion="8" android:targetSdkVersion="19" />
+添加<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+4.更神了.Activity自定义类的名字跟AndroidMenifest.xml不一致.话说这个压根没法调用窗体,反正有人说解决了.我gg出来的.
+http://blog.30c.org/2935.html
+
+参考文档：http://blog.30c.org/2935.html
+[靠谱]http://stackoverflow.com/questions/11446049/error-opening-trace-file-no-such-file-or-directory-2
+
+

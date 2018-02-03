@@ -1,0 +1,60 @@
+﻿class ArrayDemo3
+{
+	public static void main(String[] args)
+	{
+		/*数组的第一种格式:
+		需要一个容器，但不明确容器存储的具体数据。
+
+		元素类型 [] 数组名=new 元素类型 [];
+		*/
+
+		//int[] arr=new int[3];
+
+		/*数组的第二种格式：
+		   需要一个容器，存储已知的数据。
+
+			元素类型 [] 数组名=new 元素类型 [] {};
+		*/
+
+		//int [] arr=new int[] {25,41,36,12};
+		//int [] arr={78,89,65,31};
+		int [] arr={78,89,65,31,78,89,65,31,78,89,65,31,78,89,65,31,78,89,65,31,78,89,65,31};
+
+
+		/*
+		数组最基本的动作就是存和取
+		核心思想：就是对角标的操作
+		*/
+
+		System.out.println("length:"+arr.length);
+		/*
+		for(int x=0;x<arr.length;x++)	
+		{
+			System.out.println("arr["+x+"]="+arr[x]+";");//arr[0]=78;arr[1]=89....
+		}
+		*/
+
+		for(int x=0;x<arr.length;x+=2)
+		{
+			System.out.println("arr["+x+"]="+arr[x]+";");
+		}
+		
+
+		/*
+		for(int x=0;x<4;x++)
+		{
+			System.out.println(arr[x]);
+		}
+		*/
+	
+		/*
+		for(int x=arr.length-1;x>=0;x--)
+		{
+				System.out.println(arr[x]);
+		}
+		*/
+
+		
+	}
+
+}

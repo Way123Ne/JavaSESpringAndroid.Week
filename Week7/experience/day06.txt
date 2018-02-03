@@ -1,0 +1,18 @@
+﻿			day06
+				2016/12/1
+Thu:视频学习
+
+part1:android app
+心得：
+*多看多研究别人写的代码(质量好的）
+*XML解析
+**向eclipse中导入项目报错：Unable to resolve target 'android-19'
+1〉打开project.properties文件将target修改为自己的对应版本
+2〉再将AndroidMainfest.xml文件中的target修改为自己的对应版本
+3〉安装后接着报错console：invalid resource directory name: 
+   E:\Workspace\TestAndroid02\bin\res/crunch
+4> bin\res\crunch，是在bin目录下，生成这个目录原因有多个，比如在eclipse中clean工程，
+   比如在eclipse中使用Android tools创建keystore文件，都会导致
+   bin\res\crunch目录的生成，所以，如果如上报错，手动删掉bin目录即可。
+   参考文档：http://blog.sina.com.cn/s/blog_c9549b3e0102vwkb.html
+*先打开avd不要一边运行project一边打开avd(节省时间）

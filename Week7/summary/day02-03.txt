@@ -1,0 +1,27 @@
+﻿			day02-03
+				2016/11/27-28
+Sun&Mon:视频学习
+
+part1:android app
+*使用HTTP协议下载文件
+*将下载的文件写入SDCARD
+*文件下载的步骤
+①创建一个HttpURLConnection对象
+  HttpURLConnection urlConn=
+  (HttpURLConnection)url.openConnection();
+②获得一个InputStream对象
+  urlConn.getInputStream()
+③访问网络的权限
+  android.permission.INTERNET
+
+part2:Java SE
+*子父类中成员变量
+①特点 ②内存图解  ③特点-覆盖
+④特点-覆盖的应用及其注意事项
+*子父类中的构造函数-自类的实例化过程
+
+*IO(Input Output)流初步了解
+①用处 ②Java对数据的操作方式？ 
+③Java用于操作流的对象在什么中？
+④流按操作数据分为两种
+⑤流按流向分为？（硬盘<--->内存）

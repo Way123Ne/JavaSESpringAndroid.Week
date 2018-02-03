@@ -1,0 +1,16 @@
+			day05
+				2016/12/28
+Wed:视频学习
+
+part1:android app
+*Mp3项目代码编写_2_思路梳理_实现第二部分功能
+**logcat报错：
+1〉launch timeout has expired,giving up wake lock
+2>ANR
+
+*学习使用adb卸载&安装apk
+**参考文档：https://zhidao.baidu.com/question/510323798.html〉ANR
+
+part2:Java SE
+*多线程
+1〉死锁式例   2〉答疑

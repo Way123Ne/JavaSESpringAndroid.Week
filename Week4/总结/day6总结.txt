@@ -1,0 +1,16 @@
+﻿			day6
+				2016/11/10
+Thu:视频学习
+
+part1:Android app
+*Menu的使用方法
+①onCreateOptionsMenu
+②onOptionsItemSelected
+*Activity生命周期
+①onCreate②onDestroy③onPause
+④onRestart⑤onResume⑥onStart⑦onStop
+*Logcat->logcat filter
+
+part2:Java SE
+*数组常见功能-折半查找
+*面试与实际开发中（数组查找）所使用的不同方法

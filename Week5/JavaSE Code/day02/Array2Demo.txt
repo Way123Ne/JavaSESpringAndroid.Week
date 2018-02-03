@@ -1,0 +1,47 @@
+﻿/*
+二维数组定义的格式
+*/
+
+class Array2Demo
+{
+	public static void main(String[] args)
+	{
+		/*
+		一维数组
+		int[] arr=new int[3];
+		System.out.println(arr); //[I@76a40575  @左边是实体的类型。@右边是实体的哈希值
+		*/
+
+		
+//		int[][] arr=new int[3][];  //创建一个二维数组，该数组中有3个一维数组，每一个一维数组中有2个元素
+	
+//		System.out.println(arr);  //直接打印二维数组             [[I@11e78461
+//		System.out.println(arr[0]);  //直接打印二维数组中角标为0的一维数组       null   
+//		System.out.println(arr[0][0]);  //直接打印二维数组中角标为0的一维数组中的角标为0的元素    NullPointerException
+
+
+
+		//二维数组的另一种定义格式
+		int[][] arr={{12,10},{45,30,6},{9,8,20,34}};
+
+		int sum=0;
+		for(int x=0;x<arr.length;x++)
+		{
+			for(int y=0;y<arr[x].length;y++)
+			{
+				System.out.print(arr[x][y]+",");
+				sum+=arr[x][y];
+			}
+		}
+			System.out.println("sum="+sum);
+
+
+			/*
+			二维数组应用场景：
+			甲：14  45  56  72
+			乙：10  20  36  52
+			int[][] arr={{14,45,56,72},{10,20,36,52}};
+			*/
+	}
+}
+

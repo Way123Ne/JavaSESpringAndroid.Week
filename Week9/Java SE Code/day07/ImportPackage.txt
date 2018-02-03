@@ -1,0 +1,28 @@
+﻿package mypack;
+
+//import packa.DemoA;//导入了packa包中的DemoA类
+//import packa.DemoAA;
+//import packa.DemoAAA;
+
+/*
+import pakca.*; //*通配符 ；导入了packa包中所有的类
+import packa.abc.*; //导入了packa包的子包abc的所有类
+*/
+
+//导包的原则：用到哪个类，就倒入哪个类
+
+//import 干嘛用的？为了简化类名书写
+class PackageDemo
+{
+	public static void main(String[] args);
+	{
+		
+		//packa.DemoA d = new packa.DemoA();
+		DemoAbc d =new DemoA();
+		d.show();
+
+		packb.DemoB b = new packb.DemoB();
+		b.method();
+		System.out.println("Hello Package!");
+	}
+}

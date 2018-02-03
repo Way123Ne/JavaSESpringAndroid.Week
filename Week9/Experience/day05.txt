@@ -1,0 +1,85 @@
+﻿			day05
+				2016/12/14
+Wed:视频学习
+
+part1:android app
+Parcel&transact 
+心得：
+
+*logcat 报错：can not connect Intent @.....
+ -->mainfest 中注册有问题
+
+*logcat 报错：
+Java.lang.RuntimeException: Unable to start activity ComponentInfo{com.first/com.first.Game}: java.lang.NullPointerException
+
+--〉一般都会在Activity  onCreate()方法里的setContentView(XXX)发生此错误
+
+原因：xxx的错误，若为R.layout.main  那么应该是main.xml文件中的标签 使用错误
+      最常见的而且编译器不会提示的错误就是 android:name 和 android:id两者混淆，仔细检查main.xml的标签是否全部正确
+      参考文档：http://blog.csdn.net/zanfeng/article/details/18928771
+
+
+part2:Java SE
+Object
+心得：
+
+*java中this用法[重点]：
+举个例子：
+public class person{
+
+  private String name=null;
+  private int age;
+
+  public void setName(String name){
+      this.name=name;
+}
+  public String getName(){
+
+   return name;
+}
+
+}
+  在这个类中setName方法中第一个变量用this是为了和本方法的参数this做区别
+  表示这个name指的是Person这个类的name属性，而不是name参数，如果去掉这个this，
+  执行完这个方法后，Person类的name属性仍然为null
+
+  getName方法返回的Person类的name，之所以不用this是因为没有必要，
+  因为编译器会知道这个name就指的是Person的name而不是其他的name（因为找个方法没有name变量和它混淆）。
+  当然，这个方法你也可以显示的使用return this.name，没错。
+
+参考文档：https://zhidao.baidu.com/question/16075599.html
+
+
+*Java中instanceof用法[重点]：
+举个例子：
+instanceof主要用于判断是否是某个类的实例 
+任何的对象都可以调用 
+返回结果是Boolean型数值
+Class A
+A a=new A();
+boolean b=a instanceof A; 
+b的值就是true
+
+参考文档：https://zhidao.baidu.com/question/71244981.html?fr=iks&word=instanceof&ie=gbk
+
+*多态自始至终都是子类对象在做着变化。
+  Animal a = new Animal();
+  下：    Cat c = (Cat)a;
+  上：    Animal a = c;
+
+*计算机中使用补码存放负数，现按照8位数码来解释-1： 
+-1原码：1 0000 0001 -1补码：1 1111 1111（计算机中实际存储的是这个） 
+故-1的十六进制为FF。
+
+*java 本地方法 native方法
+1〉在java中，native方法是指本地方法，当在方法中调用一些不是有java语言写的代码
+   或者在方法中用java语言直接操纵计算机硬件时要声明为native方法
+2〉native方法常用于两种情况——〉非java语言写的代码；操纵计算机硬件
+
+参考文档：http://www.360doc.com/content/12/0529/11/10042054_214460982.shtml
+
+*像类似于数据模型的类，一般会产生N多个类 ---〉Week9-->Java SE Code--->ObjectDemo2
+ 其中这样的类里一般都回覆盖equal()、hashCode()、toSting()
+ 所有类都具有该功能，但都回建立特有的内容
+例如：Person这样的类会产生学生、工人....
+      而学生、工人等类都回具有类Person的共有功能，同时又具备各自的特有内容

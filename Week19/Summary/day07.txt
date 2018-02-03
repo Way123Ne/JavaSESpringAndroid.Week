@@ -1,0 +1,20 @@
+﻿		day07
+			2017/2/24
+Fri:视频学习
+part1:android app
+*用户定位(三)
+1>Geocoding介绍？
+
+**Geocoding功能？
+~是Google所提供的一项服务，主要有以下两个方面的功能：
+a)查询某地址的经纬度    b)查询某经纬度的具体地址
+
+**如何使用Geocoding?
+a)创建一个GeoCoder对象
+b)调用该对象的getFromLocation()或者是getFromLocationName()方法
+
+
+part2:Java SE
+*Map集合
+1>常用对象API(集合框架-Map集合练习-记录字母次数代码)
+2>常用对象API(集合框架-Map集合练习-Map查表法)

@@ -1,0 +1,18 @@
+﻿class Person
+{
+	String name;
+	static String country="CN"; //同一相同成员变量且成员变量值相同可通过static进行数据共享
+	public void show()
+	{
+		System.out.println(country+":"+name);
+	}
+}
+class StaticDemo
+{
+	public static void main(String[] args)
+	{
+		Person p=new Person();
+		p.name="小华";
+		p.show();
+	}
+}

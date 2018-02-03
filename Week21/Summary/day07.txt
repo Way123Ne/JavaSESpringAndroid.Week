@@ -1,0 +1,19 @@
+﻿		day07
+			2017/3/10
+Fri:视频学习
+part1:android app
+*Oauth认证(一)
+1>~认证步骤
+2>~认证URL
+**与Oauth相关的URL
+a)Request Token URL:获取未授权的Request Token的服务地址
+b)User Authorization URL:获取用户授权的Request Token服务地址
+c)Access Token URL：使用拥护授权后的Request Token换取Access Token的服务地址
+3>请求签名的方法
+a)加密算法：原文-〉算法—〉密文 [反推不成立]
+
+part2:Java SE
+*IO流
+1>字符流-练习-复制文本文件_1
+2>字符流-练习-复制文本文件_2
+3>字符流-练习-复制文本文件_图解

@@ -1,0 +1,36 @@
+﻿/*
+在java中不直接支持多继承，因为会出现调用的不确定性
+所以java将多继承机制进行了改良，在java中变成了多实现
+
+一个类可以实现多个接口
+*/
+
+interface A
+{
+	public void show();
+}
+
+interface Z
+{
+	public int add(int a,int b);
+}
+
+class  Test implements A,Z  
+{
+	public void show()
+	{
+	}
+	public int add(int a,int b)
+	{
+		return a+b+4;
+	}
+}
+
+class InterfaceDemo2
+{
+	public static void main(String[] args)
+	{
+	     Test t=new Test();
+	     t.show();
+	}
+}

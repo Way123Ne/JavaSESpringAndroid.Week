@@ -1,0 +1,22 @@
+﻿			day4
+				2016-10-18
+Tue: 视频学习
+
+part1: Android app
+*了解Android 应用程序开发技术结构图
+Application层；Application Framework层；Libraries&Android runtime层；Linux Kernel层
+*了解Android 四大组件及基于四大组件应用程序的开发方法
+①Activity ②Broadcast Receiver ③Service ④Content Provider  +Intent
+*学习Activity启动流程：
+        Android  操作系统    ②   MainActivity(on Create)
+              ①                        ③
+       AndroidMainfest.xml        activity_main_xml   
+*学习在Activity中获得代表控件[view]对象（修改activity_main.xml 文件中的 TextView代码）
+
+part2: Java SE
+*下载安装Editplus
+*Java语言基础组成
+①了解Java关键字：
+②了解Java标识符：
+
+

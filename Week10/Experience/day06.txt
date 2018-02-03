@@ -1,0 +1,37 @@
+﻿			day06
+				2016/12/22
+Thu:视频学习
+
+part1:android app
+心得：
+*logcat报错
+no keyboard for id 0,using default keymap:
+参考文档：http://stackoverflow.com/questions/12224808/
+          no-keyboard-for-id-0-using-default-keymap-system-usr-keychars-qwerty-kcm-bin
+
+*本机ip地址：ipconfig/all--->ipv4
+*8080端口和8081端口区别？
+1> 这是个空闲端口,系统和一般软件都没用到它
+  但是很多人喜欢在网络编程方面用到它，譬如tomcat(默认8080)自定义端口...
+  偶尔在访问网站的时候也能见到这个端口...
+2>就是连接互联网或者传输文件的一个端口和8080一样的
+  一些特殊的网络连接可能会用到,但是大多数情况下我们用的都是8080端口
+参考文档：https://zhidao.baidu.com/question/52053801.html
+
+*好的建议：
+1>好的编程习惯：
+用有名字的常量来代替相关的字面量
+ 2>编程中的函数：单一、小
+--〉可复用性大
+ 3>一步一步地调试
+  代码不要写太多然后到最后一块调试程序
+
+part2:Java SE
+心得：
+*throwable
+1>error
+2>exception
+**Exception -->编译时异常一旦发生需处理catch可处理
+**RuntimeException-->运行时异常，一旦发生需抛出
+
+

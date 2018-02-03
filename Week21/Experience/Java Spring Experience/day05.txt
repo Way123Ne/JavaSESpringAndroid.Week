@@ -1,0 +1,13 @@
+﻿		day05
+			2017/3/8
+Wed:视频学习
+part:Java Spring
+1>扫盲：jsp  Serlet  MVC  dao
+a)MVC:MVC全名是Model View Controller，是模型(model)－视图(view)－控制器(controller)的缩写
+b)jsp:java server pages ,java服务器页面->动态网页
+c)Serlet：Servlet（Server Applet），全称Java Servlet，是用Java编写的服务器端程序。
+  其主要功能在于交互式地浏览和修改数据，生成动态Web内容。
+d)dao:model的概念，主要是访问数据库的一些方法。
+一般的javaMVC架构中最外层是view也
+  就是页面，control是一些控制后台和页面访问的类，model其实是dao层，但大部分人，
+  会再增加一层service层来提供更为方便的应用

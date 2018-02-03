@@ -1,0 +1,13 @@
+﻿			day7
+				2016/11/18
+Fri:视频学习
+
+part1:Android app
+*Handler对ProgressBar的处理
+
+part2:Java SE
+*构造函数
+①重载 ②内存 ③注意细节
+*关键字this
+①使用场景 ②原理图解 ③细节
+*关键字static-数据共享 

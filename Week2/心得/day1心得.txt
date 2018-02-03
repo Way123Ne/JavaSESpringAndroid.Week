@@ -1,0 +1,15 @@
+﻿			day1
+				2016/10/22
+Sat:视频学习
+
+part1:Java SE
+重点：
+*java整型byte,short,int,long取值范围大小
+① byte b;//指定变量b为byte型 (最小值-128 最大值127)
+② short s;//指定变量s为short型?(最小值-32 767  最大值32 767)
+③ int i;//指定变量i为int型?(最小值-2的31次方减1   最大值2的31次方)
+④ long l;//指定变量l为long型(最小值-2的63次方   最大值2的63次方减1)
+
+*java整型byte,short,int,long与二进制转换
+①byte:1byte=8个二进制数 ②short:1short=2byte=16个二进制数
+③int：1int=4byte=32个二进制数 ④long:1long=8byte=64个二进制数

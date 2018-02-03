@@ -1,0 +1,20 @@
+﻿			day2
+				2016/11/13
+Sun:视频学习
+
+part1:Android app
+*Task基本概念
+*Activity和Task之间的关系
+*对话框风格的Activity的使用方法
+*发送短信代码：
+Uri uri=Uri.parse("smsto://0800000123");
+Intent it=new Intent(Intent.ACTION_SENDTO,uri);
+it.putExtra("sms_body","The SMS text");
+startActivity(it);
+
+part2:Java SE
+*二维数组的2种格式及其内存图解
+*二维数组的应用场景
+*面向对象的概念
+
+

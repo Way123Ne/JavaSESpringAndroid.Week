@@ -1,0 +1,41 @@
+﻿class FunctionDemo3
+{
+	public static void main(String[] args)
+	{
+	//outprint();
+	  int x=add(3,5);
+	  System.out.println("x="+x);
+	//add(3,5);
+	}
+
+
+	/*
+	注意:
+		函数中只能调用函数，不可以在函数内部定义函数
+		定义函数时，函数的结果应该返回给调用者，交由调用者处理
+   public static void add(int a,int b)
+	{
+	   System.out.println(a+b);
+	   retuen;
+	}
+	*/
+  
+
+
+
+	public static int add(int a,int b)
+	{
+		return (a+b);
+	}
+
+
+
+
+	/*
+	public static void outprint()
+	{
+	System.out.println("hello world");
+	}
+	*/
+}
+	

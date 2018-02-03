@@ -1,0 +1,15 @@
+﻿			day01
+				2016/11/19
+Sat：视频学习
+
+part1:Android app
+*Handler与线程
+*Bundle的用法
+*使用Looper来处理消息队列（该类由android应用框架来提供）
+*发送消息对象的方法
+①updateBarHandler.sendMessage(msg);  ②msg.sendToTarget();
+
+part2:Java SE
+*关键字static(见StaticDemo文件）
+①特点 ②成员变量和静态变量的区别 
+③注意事项 ④main函数解析

@@ -1,0 +1,22 @@
+﻿			day4
+				2016/11/1
+Tue:视频学习
+
+part1:Android app
+*Andorid 当中的进度条
+*各种进度条之间的关系
+**ProgressBar
+①水平风格②垂直风格③SeekBar④RatingBar
+*ProgressBar进度条的风格
+①Horizontal②Small③Large④Inverse⑤Small.Inverse⑥Large.Inverse
+*进度条新属性
+①progressBar.setMax();
+②progressBar.setprogressBar();
+③boolean flag=progressBar.isIndeterminate();
+④progressBar.incrementProgressBy();
+⑤progressBar.incrementSecondaryProgressBy();
+
+part2:Java SE
+*怎样定义一个函数？
+**两个明确
+①明确实现功能的结果是什么？②明确实现功能中是否有未知数参与运算
